@@ -4,6 +4,7 @@ import About from '@/app/components/about';
 import Projects from '@/app/components/projects';
 import Skills from '@/app/components/skills';
 import Experience from '@/app/components/experience';
+import Contact from '@/app/components/contact';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
+      <Contact />
     </main>
   );
 }
