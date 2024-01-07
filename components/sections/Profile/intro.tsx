@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import Image from "next/image";
 import React from "react";
@@ -9,9 +9,17 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import Button from "@/components/form/Button";
 
-export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+interface Props {
+  intro: string,
+  cv: string,
+  socials: { github: string, linkedIn: string }
+  photo: string,
+}
+
+export default function Intro({ intro, socials, cv, photo }: Props) {
+  const { ref } = useSectionInView('Home', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -26,13 +34,13 @@ export default function Intro() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "tween",
+              type: 'tween',
               duration: 0.2,
             }}
           >
             <Image
-              src="https://avatars.githubusercontent.com/u/4997359?v=4"
-              alt="Ricardo portrait"
+              src={photo}
+              alt="Profile Photo"
               width="192"
               height="192"
               quality="95"
@@ -46,7 +54,7 @@ export default function Intro() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "spring",
+              type: 'spring',
               stiffness: 125,
               delay: 0.1,
               duration: 0.7,
@@ -62,11 +70,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Usman.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy building{" "}
-        <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        {intro}
       </motion.h1>
 
       <motion.div
@@ -77,41 +81,28 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        <Link
+        <Button
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group"
+          primary
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection('Contact');
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Contact me here{' '}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+        </Button>
 
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
-          download
+        <Button
+          className="group"
+          href={cv}
         >
           Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
+        </Button>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/usmantahirr"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/usmantahirr"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+        <Button href={socials.linkedIn} circle><BsLinkedin /></Button>
+        <Button href={socials.github} circle><FaGithubSquare /></Button>
       </motion.div>
     </section>
   );

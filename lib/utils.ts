@@ -1,5 +1,5 @@
 export const validateString = (
-  value: unknown,
+  value: FormDataEntryValue | null,
   maxLength: number
 ): value is string => {
   if (!value || typeof value !== "string" || value.length > maxLength) {

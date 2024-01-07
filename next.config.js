@@ -8,12 +8,9 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "avatars.githubusercontent.com",
+        hostname: "cdn.sanity.io",
       },
     ],
-  },
-  experimental: {
-    serverActions: true,
   },
 };
 
