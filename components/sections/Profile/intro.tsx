@@ -1,20 +1,24 @@
 'use client';
 
-import Image from 'next/image';
-import React from 'react';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
-import { HiDownload } from 'react-icons/hi';
-import { FaGithubSquare } from 'react-icons/fa';
-import { useSectionInView } from '@/lib/hooks';
-import { useActiveSectionContext } from '@/context/active-section-context';
+import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import Button from "@/components/form/Button";
 
-export default function Intro({ intro, socials, cv }: {
+interface Props {
   intro: string,
   cv: string,
   socials: { github: string, linkedIn: string }
-}) {
+  photo: string,
+}
+
+export default function Intro({ intro, socials, cv, photo }: Props) {
   const { ref } = useSectionInView('Home', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
@@ -35,8 +39,8 @@ export default function Intro({ intro, socials, cv }: {
             }}
           >
             <Image
-              src="https://avatars.githubusercontent.com/u/4997359?v=4"
-              alt="Ricardo portrait"
+              src={photo}
+              alt="Profile Photo"
               width="192"
               height="192"
               quality="95"
@@ -77,9 +81,10 @@ export default function Intro({ intro, socials, cv }: {
           delay: 0.1,
         }}
       >
-        <Link
+        <Button
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group"
+          primary
           onClick={() => {
             setActiveSection('Contact');
             setTimeOfLastClick(Date.now());
@@ -87,32 +92,17 @@ export default function Intro({ intro, socials, cv }: {
         >
           Contact me here{' '}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+        </Button>
 
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+        <Button
+          className="group"
           href={cv}
-          target="_blank"
-          download
         >
           Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
+        </Button>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href={socials.linkedIn}
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href={socials.github}
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+        <Button href={socials.linkedIn} circle><BsLinkedin /></Button>
+        <Button href={socials.github} circle><FaGithubSquare /></Button>
       </motion.div>
     </section>
   );

@@ -1,10 +1,9 @@
 import { getProfile } from "@/sanity/sanity-utils";
-
-import Intro from "./intro";
-import SectionDivider from "../section-divider";
-import About from "./about";
 import { getErrorMessage } from "@/lib/utils";
 import ErrorSection from '@/components/ErrorSection';
+import SectionDivider from "@/components/section-divider";
+import Intro from "./intro";
+import About from "./about";
 
 const Profile = async () => {
   let profile = undefined;
@@ -17,7 +16,7 @@ const Profile = async () => {
 
   return (
     <>
-      <Intro intro={profile.intro} socials={profile.socials} cv={profile.cv} />
+      <Intro intro={profile.intro} socials={profile.socials} cv={profile.cv} photo={profile.photo} />
       <SectionDivider />
       <About content={profile.about} />
     </>

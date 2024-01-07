@@ -10,6 +10,7 @@ export type Profile = {
     linkedIn: string,
     github: string,
   },
+  photo: string,
   cv: string,
   skills: string[],
 }

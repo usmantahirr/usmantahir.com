@@ -12,6 +12,7 @@ export async function getProfile(): Promise<Profile> {
         socials,
         about,
         "cv": cv.asset->url,
+        "photo": photo.asset->url,
         skills
       }`
   );
