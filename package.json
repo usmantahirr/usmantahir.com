@@ -16,6 +16,7 @@
     "@sanity/vision": "^3.23.4",
     "clsx": "^1.2.1",
     "framer-motion": "^10.12.17",
+    "libphonenumber-js": "^1.10.53",
     "next": "14.0.4",
     "next-sanity": "^7.0.7",
     "react": "^18",

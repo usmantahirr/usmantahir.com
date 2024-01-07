@@ -1,14 +1,17 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "../section-heading";
+import toast from "react-hot-toast";
 import { motion } from "framer-motion";
+import parsePhoneNumber from 'libphonenumber-js'
+
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "../form/submit-btn";
-import toast from "react-hot-toast";
+import SectionHeading from "@/components/SectionHeading";
+import SubmitBtn from "@/components/form/submit-btn";
 
-export default function Contact() {
+
+export default function ContactForm({ email, phone }: { email: string, phone: string }) {
   const { ref } = useSectionInView("Contact");
 
   return (
@@ -32,11 +35,14 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+        Please contact me directly at&nbsp;
+        <a className="underline" href={`tel:${phone}`}>
+          {parsePhoneNumber(phone)?.formatNational()}
         </a>{" "}
-        or through this form.
+        or <a className="underline" href={`mailto:${email}`}>
+        {email}
+      </a>{" "}or through this form.
+        <span className="text-xs">&nbsp;(Text before call)</span>
       </p>
 
       <form

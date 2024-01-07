@@ -1,7 +1,8 @@
 import { type SchemaTypeDefinition } from "sanity";
-import experience from "./schemas/experience-schema";
-import profile from "./schemas/profile-schema";
+import experience from "./schemas/experience";
+import profile from "./schemas/profile";
+import metadata from "./schemas/metadata";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [profile, experience],
+  types: [profile, experience, metadata],
 };

@@ -1,16 +1,25 @@
 import React from "react";
+import { groq } from "next-sanity";
+import parsePhoneNumber from 'libphonenumber-js'
+import { executeQuery } from "@/sanity/sanity-utils";
+import type { MetaData } from "@/types/MetaData";
 
-export default function Footer() {
+export default async function Footer() {
+  const meta = await executeQuery<MetaData>(groq`*[_type == "metadata"][0]{
+    footerNote,
+    phone,
+    email,
+  }`);
+
   return (
     <footer className="mb-10 px-4 text-center text-gray-500">
-      <small className="mb-2 block text-xs">
-        &copy; 2030 Ricardo. All rights reserved.
-      </small>
       <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
-        React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-        Framer Motion, React Email & Resend, Vercel hosting.
+        {meta.footerNote}
       </p>
+      <p className='text-xs'>
+        {meta.email} - {parsePhoneNumber(meta.phone)?.formatInternational()}
+      </p>
+
     </footer>
   );
 }
