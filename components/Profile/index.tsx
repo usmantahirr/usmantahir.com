@@ -3,11 +3,17 @@ import { getProfile } from "@/sanity/sanity-utils";
 import Intro from "./intro";
 import SectionDivider from "../section-divider";
 import About from "./about";
+import { getErrorMessage } from "@/lib/utils";
+import ErrorSection from '@/components/ErrorSection';
 
 const Profile = async () => {
-  const profile = await getProfile();
+  let profile = undefined;
 
-  console.log(profile);
+  try {
+    profile = await getProfile();
+  } catch (error: unknown) {
+    return (<ErrorSection errorMessage={getErrorMessage(error)} />)
+  }
 
   return (
     <>

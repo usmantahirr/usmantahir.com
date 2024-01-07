@@ -1,15 +1,9 @@
-import { createClient, groq } from "next-sanity";
-import { apiVersion, dataset, projectId } from "./env";
-import { Profile } from '@/types/Profile';
+import { groq } from "next-sanity";
+import { Profile } from "@/types/Profile";
+import { getSanityClient } from "./client";
 
 export async function getProfile(): Promise<Profile> {
-  const client = createClient({
-    projectId,
-    apiVersion,
-    dataset,
-  });
-
-  return client.fetch(
+  const data: Profile = await getSanityClient().fetch(
     groq`*[_type == "profile"][0]{
         _id,
         _createdAt,
@@ -21,4 +15,10 @@ export async function getProfile(): Promise<Profile> {
         skills
       }`
   );
+
+  if (!data) {
+    throw new Error("Profile data not available");
+  }
+
+  return data;
 }
