@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
@@ -97,12 +96,13 @@ export default function Intro({ intro, socials, cv, photo }: Props) {
         <Button
           className="group"
           href={cv}
+          target="_blank"
         >
           Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </Button>
 
-        <Button href={socials.linkedIn} circle><BsLinkedin /></Button>
-        <Button href={socials.github} circle><FaGithubSquare /></Button>
+        <Button href={socials.linkedIn} circle target="_blank"><BsLinkedin /></Button>
+        <Button href={socials.github} circle target="_blank"><FaGithubSquare /></Button>
       </motion.div>
     </section>
   );

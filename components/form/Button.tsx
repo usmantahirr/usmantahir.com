@@ -1,17 +1,16 @@
+import { AnchorHTMLAttributes, ReactNode } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import { ReactNode } from "react";
 
-interface Props {
+interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string;
-  className?: string;
-  children: ReactNode;
+  children?: ReactNode;
   circle?: boolean;
   primary?: boolean;
   onClick?: () => void;
 }
 
-const Button = ({ href, children, className, circle = false, primary = false }: Props): ReactNode => (
+const Button = ({ href, children, className, circle = false, primary = false, ...rest }: Props): ReactNode => (
   <Link
     href={href}
     className={
@@ -22,7 +21,7 @@ const Button = ({ href, children, className, circle = false, primary = false }: 
         className,
       )
     }
-    target="_blank"
+    {...rest}
   >
     {children}
   </Link>
