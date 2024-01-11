@@ -29,8 +29,11 @@ const Experience = ({ experience }: Props) => {
           <Image src={experience.logo} alt={experience.institution} width={50} height={50} />
         </div>
         <div className="inline">
-          <h2 className="text-2xl font-light">{experience.institution}</h2>
-          <h3 className="font-semibold text-gray-500">{experience.location}</h3>
+          <span className="text-2xl font-light">{experience.institution}</span>
+          <div className="text-gray-500">
+            <span className="mr-1 font-semibold">{experience.position}</span>(
+            <span className="mx-1 text-sm">{experience.location}</span>)
+          </div>
         </div>
       </div>
 
