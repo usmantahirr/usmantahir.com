@@ -49,7 +49,7 @@ export default function ContactForm({ email, phone }: { email: string; phone: st
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+          const { error } = await sendEmail(formData);
 
           if (error) {
             toast.error(error);

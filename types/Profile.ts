@@ -1,14 +1,14 @@
-import { PortableTextBlock } from 'sanity';
+import { PortableTextBlock } from "sanity";
 
 export type Profile = {
-  name: string,
-  intro: string,
-  about: PortableTextBlock[],
+  name: string;
+  intro: string;
+  about: PortableTextBlock[];
   socials: {
-    linkedIn: string,
-    github: string,
-  },
-  photo: string,
-  cv: string,
-  skills: string[],
-}
+    linkedIn: string;
+    github: string;
+  };
+  photo: string;
+  cv: string;
+  skills: string[];
+};

@@ -40,14 +40,14 @@ const profile: SchemaTypeDefinition = {
     },
     {
       name: "photo",
-      type: 'image',
+      type: "image",
       fields: [
         {
           name: "alt",
           title: "Alt Text",
-          type: 'string',
-        }
-      ]
+          type: "string",
+        },
+      ],
     },
     {
       name: "cv",

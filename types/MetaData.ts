@@ -1,5 +1,5 @@
 export type MetaData = {
-  footerNote: string,
-  phone: string,
-  email: string,
-}
+  footerNote: string;
+  phone: string;
+  email: string;
+};
