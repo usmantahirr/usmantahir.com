@@ -9,6 +9,7 @@ export function getSanityClient(): SanityClient {
       projectId,
       apiVersion,
       dataset,
+      useCdn: true
     };
     clientInstance = createSanityClient(config);
   }

@@ -23,12 +23,34 @@ const experience = defineType({
     defineField({
       name: "position",
       title: "Position/Title",
-      type: "date",
+      type: "string",
+    }),
+    defineField({
+      name: 'location',
+      title: 'Location',
+      type: "string"
+    }),
+    defineField({
+      name: "type",
+      title: "Type",
+      type: "string",
+      options: {
+        list: [
+          { title: 'Education', value: 'education' },
+          { title: 'Work', value: 'work' }
+        ]
+      }
+    }),
+    defineField({
+      name: 'logo',
+      title: 'Logo',
+      type: 'image',
     }),
     defineField({
       name: "description",
       title: "Description",
-      type: "string",
+      type: "array",
+      of: [{ type: "block" }],
     }),
     defineField({
       name: "technologies",

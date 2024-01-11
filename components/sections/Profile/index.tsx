@@ -6,8 +6,7 @@ import SectionDivider from "@/components/SectionDivider";
 import type { Profile } from "@/types/Profile";
 import Intro from "./intro";
 import About from "./about";
-import Skills from "@/components/sections/skills";
-
+import Skills from "./skills";
 
 const Profile = async () => {
   let profile = undefined;
@@ -20,15 +19,19 @@ const Profile = async () => {
         "cv": cv.asset->url,
         "photo": photo.asset->url,
         skills
-      }`,
-    );
+      }`);
   } catch (error: unknown) {
-    return (<ErrorSection errorMessage={getErrorMessage(error)} />)
+    return <ErrorSection errorMessage={getErrorMessage(error)} />;
   }
 
   return (
     <>
-      <Intro intro={profile.intro} socials={profile.socials} cv={profile.cv} photo={profile.photo} />
+      <Intro
+        intro={profile.intro}
+        socials={profile.socials}
+        cv={profile.cv}
+        photo={profile.photo}
+      />
       <SectionDivider />
       <About content={profile.about} />
       <Skills data={profile.skills} />

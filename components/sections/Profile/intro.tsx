@@ -25,7 +25,7 @@ export default function Intro({ intro, socials, cv, photo }: Props) {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[65rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -40,16 +40,16 @@ export default function Intro({ intro, socials, cv, photo }: Props) {
             <Image
               src={photo}
               alt="Profile Photo"
-              width="192"
-              height="192"
+              width="190"
+              height="190"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-0 right-0 text-5xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
