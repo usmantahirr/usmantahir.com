@@ -2,9 +2,6 @@
 
 import React from "react";
 import moment from "moment/moment";
-import Image from 'next/image';
-import { CgWorkAlt } from "react-icons/cg";
-import { LuGraduationCap } from "react-icons/lu";
 import SectionHeading from "@/components/SectionHeading";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import { useSectionInView } from "@/lib/hooks";
