@@ -15,5 +15,5 @@ html.dark {
 }
 
 .timeline-logo {
-  @apply rounded-full
+  @apply rounded-full;
 }

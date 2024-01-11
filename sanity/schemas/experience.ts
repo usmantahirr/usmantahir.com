@@ -26,9 +26,9 @@ const experience = defineType({
       type: "string",
     }),
     defineField({
-      name: 'location',
-      title: 'Location',
-      type: "string"
+      name: "location",
+      title: "Location",
+      type: "string",
     }),
     defineField({
       name: "type",
@@ -36,15 +36,15 @@ const experience = defineType({
       type: "string",
       options: {
         list: [
-          { title: 'Education', value: 'education' },
-          { title: 'Work', value: 'work' }
-        ]
-      }
+          { title: "Education", value: "education" },
+          { title: "Work", value: "work" },
+        ],
+      },
     }),
     defineField({
-      name: 'logo',
-      title: 'Logo',
-      type: 'image',
+      name: "logo",
+      title: "Logo",
+      type: "image",
     }),
     defineField({
       name: "description",

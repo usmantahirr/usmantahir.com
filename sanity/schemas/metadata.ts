@@ -1,5 +1,5 @@
 import { defineField, defineType } from "sanity";
-import { isValidPhoneNumber } from 'libphonenumber-js'
+import { isValidPhoneNumber } from "libphonenumber-js";
 
 const metadata = defineType({
   name: "metadata",
@@ -15,12 +15,13 @@ const metadata = defineType({
       name: "phone",
       title: "Phone",
       type: "string",
-      validation: Rule => Rule.custom((ph: string | undefined) => {
-        if (ph && isValidPhoneNumber(ph)) {
-          return true;
-        }
-        return "Invalid Phone number";
-      }),
+      validation: (Rule) =>
+        Rule.custom((ph: string | undefined) => {
+          if (ph && isValidPhoneNumber(ph)) {
+            return true;
+          }
+          return "Invalid Phone number";
+        }),
     }),
     defineField({
       name: "email",
