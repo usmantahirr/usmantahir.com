@@ -1,71 +1,55 @@
-'use client';
-
-import React from "react";
-import moment from "moment/moment";
-import SectionHeading from "@/components/SectionHeading";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";
-import { Experience } from "@/types/Experience";
+import Image from "next/image";
+import moment from "moment";
 import { PortableText } from "@portabletext/react";
+import type { Experience } from "@/types/Experience";
+import { useTheme } from "@/context/theme-context";
 
-import "react-vertical-timeline-component/style.min.css";
+type Props = {
+  experience: Experience
+}
 
-
-export const formatDate = (from: string, to: string): string => {
+const formatDate = (from: string, to: string): string => {
   const fromDate = moment(from);
   const toDate = moment(to);
 
-  return `${fromDate.format('MMMM Do YYYY')} - ${to ? toDate.format('MMMM Do YYYY') : 'Present'}`
-}
-
-export default function Experience({ experiences }: {
-  experiences: Experience[]
-}) {
-  const { ref } = useSectionInView('Experience');
+  return `${fromDate.format("MMMM Do YYYY")} - ${to ? toDate.format("MMMM Do YYYY") : "Present"}`;
+};
+const Experience = ({ experience }: Props) => {
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline layout='1-column-left'>
-        {experiences.map((experience: Experience) => (
-          <React.Fragment key={experience._id}>
-            <VerticalTimelineElement
-              visible={true}
-              contentStyle={{
-                background: theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.05)',
-                boxShadow: 'none',
-                border: '1px solid rgba(0, 0, 0, 0.05)',
-                textAlign: 'left',
-                padding: '1.3rem 2rem',
-              }}
-              contentArrowStyle={{
-                display: 'none'
-              }}
-              date={formatDate(experience.from, experience.to)}
-              icon={React.createElement('img', {
-                src: experience.logo,
-                class: 'timeline-logo'
-              })}
-              iconStyle={{
-                background: "white",
-                width: '60px',
-                height: '60px',
-                top: '10px',
-                left: '-12px',
-                fontSize: '2rem',
-              }}
-            >
-              <h3 className="font-semibold capitalize">{experience.institution}</h3>
-              <p className="font-normal !mt-0">{experience.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                <PortableText value={experience.description} />
-              </p>
-            </VerticalTimelineElement>
-          </React.Fragment>
-        ))}
-      </VerticalTimeline>
-    </section>
+    <div
+      className="max-w-[70rem] my-5 py-5 px-10 border-gray-600 content-start relative"
+      style={{
+        background: theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+      }}>
+      <div className="flex">
+        <div className="inline mr-5">
+          <Image src={experience.logo} alt={experience.institution} width={50} height={50} />
+        </div>
+        <div className="inline">
+          <h2 className="text-2xl font-light">{experience.institution}</h2>
+          <h3 className="text-gray-500 font-semibold">{experience.location}</h3>
+        </div>
+      </div>
+
+      <span className="font-semibold absolute right-8 top-5">{formatDate(experience.from, experience.to)}</span>
+      <div className="pt-4">
+        <PortableText value={experience.description} />
+      </div>
+      <div className="flex flex-wrap text-sm mt-4">
+        {
+          experience.technologies.map((technology: string) => (
+              <div
+                className="py-2 px-3 m-1 bg-white borderBlack rounded dark:bg-white/10 dark:text-white/80"
+                key={technology}>{technology}
+              </div>
+            ),
+          )
+        }
+      </div>
+    </div>
   );
-}
+};
+
+export default Experience;
