@@ -3,22 +3,21 @@
 import React from "react";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
-import parsePhoneNumber from 'libphonenumber-js'
+import parsePhoneNumber from "libphonenumber-js";
 
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SectionHeading from "@/components/SectionHeading";
 import SubmitBtn from "@/components/form/submit-btn";
 
-
-export default function ContactForm({ email, phone }: { email: string, phone: string }) {
+export default function ContactForm({ email, phone }: { email: string; phone: string }) {
   const { ref } = useSectionInView("Contact");
 
   return (
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-20 w-[min(100%,50rem)] text-center sm:mb-28"
       initial={{
         opacity: 0,
       }}
@@ -34,14 +33,16 @@ export default function ContactForm({ email, phone }: { email: string, phone: st
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <p className="-mt-6 text-gray-700 dark:text-white/80">
         Please contact me directly at&nbsp;
         <a className="underline" href={`tel:${phone}`}>
           {parsePhoneNumber(phone)?.formatNational()}
         </a>{" "}
-        or <a className="underline" href={`mailto:${email}`}>
-        {email}
-      </a>{" "}or through this form.
+        or{" "}
+        <a className="underline" href={`mailto:${email}`}>
+          {email}
+        </a>{" "}
+        or through this form.
         <span className="text-xs">&nbsp;(Text before call)</span>
       </p>
 
@@ -59,7 +60,7 @@ export default function ContactForm({ email, phone }: { email: string, phone: st
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="borderBlack h-14 rounded-lg px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           name="senderEmail"
           type="email"
           required
@@ -67,7 +68,7 @@ export default function ContactForm({ email, phone }: { email: string, phone: st
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="borderBlack my-3 h-52 rounded-lg p-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           name="message"
           placeholder="Your message"
           required

@@ -1,19 +1,19 @@
-'use client';
+"use client";
 
-import React from 'react';
-import SectionHeading from '../../SectionHeading';
-import { motion } from 'framer-motion';
-import { useSectionInView } from '@/lib/hooks';
-import { PortableTextBlock } from 'sanity';
-import { PortableText } from '@portabletext/react'
+import React from "react";
+import { motion } from "framer-motion";
+import { PortableTextBlock } from "sanity";
+import { PortableText } from "@portabletext/react";
+import { useSectionInView } from "@/lib/hooks";
+import SectionHeading from "@/components/SectionHeading";
 
 export default function About({ content }: { content: PortableTextBlock[] }) {
-  const { ref } = useSectionInView('About');
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[60rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[60rem] scroll-mt-28 text-center leading-8 sm:mb-40"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
