@@ -1,11 +1,14 @@
-import Header from "@/components/sections/header";
-import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 import { Inter } from "next/font/google";
+import { Toaster } from "react-hot-toast";
+import Header from "@/components/sections/header";
+
+import ThemeContextProvider from "@/context/theme-context";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/sections/footer";
 import ThemeSwitch from "@/components/form/theme-switch";
-import ThemeContextProvider from "@/context/theme-context";
-import { Toaster } from "react-hot-toast";
+
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <Analytics />
             <Footer />
 
             <Toaster position="top-right" />
