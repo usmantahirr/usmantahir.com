@@ -37,7 +37,7 @@ const Experience = ({ experience }: Props) => {
         </div>
       </div>
 
-      <span className="absolute right-8 top-5 font-semibold">
+      <span className="md:absolute md:right-8 md:top-5 font-semibold block md:inline mt-4 md:mt-0">
         {formatDate(experience.from, experience.to)}
       </span>
       <div className="pt-4">
