@@ -31,7 +31,7 @@ export function HeroMedia() {
         ref={lightRef}
         className="mvid-light"
         src="/character-light-loop.mp4"
-        poster="/character-light.png"
+        poster="/character-light.jpg"
         autoPlay
         loop
         playsInline
@@ -42,7 +42,7 @@ export function HeroMedia() {
         ref={darkRef}
         className="mvid-dark"
         src="/character-dark-loop.mp4"
-        poster="/character-dark.png"
+        poster="/character-dark.jpg"
         autoPlay
         loop
         playsInline

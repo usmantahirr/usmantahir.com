@@ -329,6 +329,15 @@ a:hover {
   background: var(--ember-ink);
   color: #fff;
 }
+/* Dark theme: the bright accent ember (#E0592A) gives white button text only
+   ~3.7:1. Darken the button surface (hue preserved) so white clears WCAG AA
+   4.5:1, without touching the accent used elsewhere. */
+.site.dark .btn-primary {
+  background: #c2431f;
+}
+.site.dark .btn-primary:hover {
+  background: #a8391a;
+}
 .btn-ghost {
   background: transparent;
   color: var(--ink);
