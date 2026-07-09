@@ -601,6 +601,54 @@ a:hover {
   font-weight: 600;
   color: var(--ink);
 }
+/* featured project — lighter than the three pillar cases: single-column body
+   + a horizontal outcome strip instead of the sticky sidebar */
+.case.feature .lead {
+  margin-top: 26px;
+  max-width: 48ch;
+}
+.feature-body {
+  display: grid;
+  gap: 26px;
+}
+.case.feature .prose {
+  max-width: 72ch;
+}
+.feature-outcomes {
+  list-style: none;
+  margin: 0;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.feature-outcomes li {
+  display: flex;
+  gap: 12px;
+  font-size: 0.96rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+.feature-outcomes li .mk {
+  flex: none;
+  margin-top: 0.42em;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: var(--ember);
+  transform: rotate(45deg);
+}
+.feature-outcomes li b {
+  font-weight: 600;
+  color: var(--ink);
+}
+@media (max-width: 900px) {
+  .feature-outcomes {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
 /* about / pattern */
 .pattern {
   background: color-mix(in srgb, var(--surface) 32%, var(--bg));

@@ -365,6 +365,72 @@ export default function Home() {
                   </aside>
                 </div>
               </article>
+
+              {/* Featured project — Abu Dhabi (Systems at Scale) */}
+              <article className="case feature reveal">
+                <div className="casetop">
+                  <span className="caselabel">
+                    <span className="n">Featured</span>Systems at Scale
+                  </span>
+                  <span className="casesub">
+                    Abu Dhabi Government · national visa &amp; health-screening
+                    platform · via Systems Limited · 2020 · contract
+                  </span>
+                </div>
+                <p className="lead disp">
+                  <span className="em">
+                    As tech lead for the application layer, I built the national
+                    platform every UAE visa applicant passed through
+                  </span>{" "}
+                  — across every country with a UAE embassy — and I designed it
+                  to keep clearing passengers even when the airport network
+                  dropped.
+                </p>
+                <div className="feature-body">
+                  <div className="prose">
+                    <p>
+                      The platform threaded a single visa-application ID through
+                      four portals — applicants applying from anywhere in the
+                      world, labs uploading their test results, government
+                      reviewers, and the airport gate. At the gate, an officer
+                      scanned a passport and got a real-time status back, so the
+                      whole journey resolved on one ID.
+                    </p>
+                    <p>
+                      The hard part was that gate. Airport networks drop and
+                      immigration can&rsquo;t stop — so the gates ran on
+                      offline-resilient local servers that keep clearing
+                      passengers and reconcile with the central system once the
+                      connection returns. I unified all four portals under one
+                      design system so they looked and behaved as a single
+                      product.
+                    </p>
+                  </div>
+                  <ul className="feature-outcomes">
+                    <li>
+                      <span className="mk" />
+                      <span>
+                        <b>National scale</b> — every UAE visa applicant, across
+                        every country with a UAE embassy
+                      </span>
+                    </li>
+                    <li>
+                      <span className="mk" />
+                      <span>
+                        <b>Offline-resilient gates</b> — immigration keeps
+                        clearing passengers straight through network outages
+                      </span>
+                    </li>
+                    <li>
+                      <span className="mk" />
+                      <span>
+                        <b>One system, four portals</b> (applicant, lab,
+                        government, gate) threaded by a single visa-application ID
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </article>
             </div>
           </div>
         </section>
