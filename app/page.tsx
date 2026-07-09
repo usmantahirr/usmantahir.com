@@ -31,8 +31,8 @@ export default function Home() {
             <div className="ctarow reveal in d3">
               <a
                 className="btn btn-primary"
-                href="/usman-tahir-cv-2026.docx"
-                download="Usman-Tahir-CV-2026.docx"
+                href="/usman-tahir-cv.pdf"
+                download="Usman-Tahir-CV.pdf"
               >
                 Download CV <span aria-hidden="true">↓</span>
               </a>
