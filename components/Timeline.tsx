@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const ROWS = [
   {
@@ -35,6 +35,34 @@ const ROWS = [
 
 export function Timeline() {
   const [showDetail, setShowDetail] = useState(false);
+  // React owns the scroll-reveal `in` state for this element. The global
+  // RevealObserver mutates className imperatively, which React would clobber
+  // on every showDetail re-render (hiding the whole timeline). Managing it in
+  // state keeps `in` across re-renders.
+  const [revealed, setRevealed] = useState(false);
+  const tlRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = tlRef.current;
+    if (!el) return;
+    if (el.classList.contains("in")) {
+      setRevealed(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            setRevealed(true);
+            io.disconnect();
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
   return (
     <section className="section" id="career">
@@ -47,7 +75,12 @@ export function Timeline() {
           A decade of shipping before the case studies above — regulated
           banking, telecom integration, IoT, and security tooling.
         </p>
-        <div className={`tl reveal${showDetail ? " open" : ""}`}>
+        <div
+          ref={tlRef}
+          className={`tl reveal${revealed ? " in" : ""}${
+            showDetail ? " open" : ""
+          }`}
+        >
           {ROWS.map((r) => (
             <div className="tlrow" key={r.company}>
               <div className="tlmain">
