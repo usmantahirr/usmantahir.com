@@ -399,10 +399,11 @@ export default function Home() {
                       months, working day and night.
                     </p>
                     <p>
-                      My side was the application layer and QA. Some of those
-                      travelers were on 2G, so I architected the frontend to load
-                      on the world&rsquo;s slowest connections, and put a GraphQL
-                      backend-for-frontend in front of the Azure APIs — every
+                      My side was the application layer and QA. The proof came
+                      from labs and embassies all over the world — some on
+                      connections you couldn&rsquo;t count on, like Uganda — so I
+                      built the upload side to work on 2G, and put a GraphQL
+                      backend-for-frontend in front of the Azure APIs: every
                       screen pulled exactly what it needed, with the real
                       endpoints and sensitive health data never exposed to the
                       browser.
@@ -412,22 +413,23 @@ export default function Home() {
                     <li>
                       <span className="mk" />
                       <span>
-                        <b>Every traveler verified</b> — automatically at the
-                        e-gate, or by an officer&rsquo;s passport scan
+                        <b>Over half a million travelers cleared it</b> — the
+                        mandatory vaccination check, at the e-gate or by an
+                        officer&rsquo;s passport scan
                       </span>
                     </li>
                     <li>
                       <span className="mk" />
                       <span>
-                        <b>Application delivered in 4 months</b> — a five-person
-                        team, day and night, under pandemic pressure
+                        <b>Built in 4 months</b> — Feb–May 2021, a five-person
+                        team under pandemic pressure
                       </span>
                     </li>
                     <li>
                       <span className="mk" />
                       <span>
-                        <b>Built for 2G</b> — a GraphQL BFF kept payloads lean and
-                        the real APIs and health data off the client
+                        <b>Built for 2G</b> — so labs and embassies could upload
+                        from anywhere, behind a GraphQL BFF that hid the real APIs
                       </span>
                     </li>
                   </ul>
