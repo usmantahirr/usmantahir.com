@@ -527,11 +527,8 @@ a:hover {
   letter-spacing: 0.02em;
 }
 .casegrid {
-  display: grid;
-  grid-template-columns: 1.55fr 0.95fr;
-  gap: 40px;
+  display: block;
   margin-top: 26px;
-  align-items: start;
 }
 .casebody {
   min-width: 0;
@@ -557,13 +554,62 @@ a:hover {
 .prose p:last-child {
   margin-bottom: 0;
 }
+/* collapsible case-study prose — skim layer (lead + outcomes) always shows;
+   the full story expands on demand */
+.casestory {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  margin-top: 0;
+  transition: grid-template-rows 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 0.4s ease, margin 0.4s ease;
+}
+.casestory-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+.casestory.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-top: 18px;
+}
+.casetoggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ember-ink);
+  transition: color 0.2s;
+}
+.casetoggle:hover {
+  color: var(--ember);
+}
+.casetoggle-arrow {
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.casetoggle[aria-expanded="true"] .casetoggle-arrow {
+  transform: rotate(90deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .casestory {
+    transition: opacity 0.2s ease;
+  }
+  .casetoggle-arrow {
+    transition: none;
+  }
+}
 .outcomes {
-  background: color-mix(in srgb, var(--surface) 62%, var(--bg));
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 24px 24px 26px;
-  position: sticky;
-  top: 88px;
+  border-top: 1px solid var(--line);
+  padding: 24px 0 0;
+  margin-top: 28px;
 }
 .outh {
   font-family: var(--font-mono);
@@ -577,9 +623,9 @@ a:hover {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 36px;
 }
 .outlist li {
   display: flex;
@@ -605,18 +651,13 @@ a:hover {
    + a horizontal outcome strip instead of the sticky sidebar */
 .case.feature .lead {
   margin-top: 26px;
-  max-width: 48ch;
 }
 .feature-body {
-  display: grid;
-  gap: 26px;
-}
-.case.feature .prose {
-  max-width: 72ch;
+  display: block;
 }
 .feature-outcomes {
   list-style: none;
-  margin: 0;
+  margin: 28px 0 0;
   padding: 24px 0 0;
   border-top: 1px solid var(--line);
   display: grid;
@@ -1002,6 +1043,9 @@ a:hover {
   }
   .outcomes {
     position: static;
+  }
+  .outlist {
+    grid-template-columns: 1fr;
   }
   .contactgrid {
     grid-template-columns: 1fr;

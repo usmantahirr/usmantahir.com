@@ -2,6 +2,7 @@ import { HeroMedia } from "@/components/HeroMedia";
 import { RevealObserver } from "@/components/RevealObserver";
 import { Timeline } from "@/components/Timeline";
 import { ContactForm } from "@/components/ContactForm";
+import { CollapsibleStory } from "@/components/CollapsibleStory";
 
 export default function Home() {
   return (
@@ -83,7 +84,7 @@ export default function Home() {
                       — from the first Figma flows to a live product embedded in
                       retailer checkouts.
                     </p>
-                    <div className="prose">
+                    <CollapsibleStory>
                       <p>
                         The first six months weren&rsquo;t code. Fidamy sells
                         device insurance <em>through</em> retail partners rather
@@ -125,7 +126,7 @@ export default function Home() {
                         requirement for an insurer. What started as a purchase
                         form had become a distribution platform.
                       </p>
-                    </div>
+                    </CollapsibleStory>
                   </div>
                   <aside className="outcomes">
                     <p className="outh">Outcomes</p>
@@ -186,7 +187,7 @@ export default function Home() {
                       — backend, Android, iOS, and web — while shipping the
                       product&rsquo;s frontend myself.
                     </p>
-                    <div className="prose">
+                    <CollapsibleStory>
                       <p>
                         I was brought in on a referral, not a job posting. I&rsquo;d
                         just led the enterprise integration that migrated Freedom
@@ -227,7 +228,7 @@ export default function Home() {
                         and in-app video consultations on a compressed timeline
                         when COVID hit.
                       </p>
-                    </div>
+                    </CollapsibleStory>
                   </div>
                   <aside className="outcomes">
                     <p className="outh">Outcomes</p>
@@ -291,7 +292,7 @@ export default function Home() {
                       on a yacht; you should be able to own a slice of one and use
                       it when you want.
                     </p>
-                    <div className="prose">
+                    <CollapsibleStory>
                       <p>
                         Owning a yacht is out of reach for almost everyone, but the
                         thing people actually want isn&rsquo;t the asset — it&rsquo;s
@@ -326,7 +327,7 @@ export default function Home() {
                         need all the way to people using it. The technology was
                         never the point.
                       </p>
-                    </div>
+                    </CollapsibleStory>
                   </div>
                   <aside className="outcomes">
                     <p className="outh">Outcomes</p>
@@ -385,7 +386,7 @@ export default function Home() {
                   turned into queues.
                 </p>
                 <div className="feature-body">
-                  <div className="prose">
+                  <CollapsibleStory>
                     <p>
                       The world needed to reopen, and vaccinated travel was the
                       way — but checking that at the gate would mean long queues.
@@ -408,7 +409,7 @@ export default function Home() {
                       endpoints and sensitive health data never exposed to the
                       browser.
                     </p>
-                  </div>
+                  </CollapsibleStory>
                   <ul className="feature-outcomes">
                     <li>
                       <span className="mk" />
