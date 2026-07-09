@@ -373,49 +373,61 @@ export default function Home() {
                     <span className="n">Featured</span>Systems at Scale
                   </span>
                   <span className="casesub">
-                    Abu Dhabi Government · national COVID-screening platform · via
-                    Systems Limited · 2020 · contract
+                    Abu Dhabi Government · via Systems Limited · 2021
                   </span>
                 </div>
                 <p className="lead disp">
                   <span className="em">
-                    As application-side tech lead, I led the build of the
-                    UAE&rsquo;s national COVID-screening platform
+                    As application-side tech lead, I led the build of the app Abu
+                    Dhabi used to reopen to travel during COVID
                   </span>{" "}
-                  — with airport gates that kept clearing passengers even when
-                  the network dropped.
+                  — verifying vaccination at visa time, so the airport gates never
+                  turned into queues.
                 </p>
                 <div className="feature-body">
                   <div className="prose">
                     <p>
-                      I led a team of five — DevOps, React, UI, and QA — and
-                      owned the architecture end to end. Its hard part was the
-                      airport gate: immigration can&rsquo;t stop when a network
-                      drops. So I ran the gates on offline-resilient local servers
-                      that kept clearing passengers and reconciled with the
-                      central system once the connection came back.
+                      The world needed to reopen, and vaccinated travel was the
+                      way — but checking that at the gate would mean long queues.
+                      So the check moved upstream: a traveler was vaccinated at
+                      visa time, and their lab or embassy uploaded the proof to
+                      the portal before the flight. By arrival, Abu Dhabi already
+                      knew — travelers whose passports the e-gates could read
+                      cleared themselves; everyone else, an officer scanned a
+                      passport and the status came straight back. Every traveler
+                      through the airport, verified — and we shipped it in four
+                      months, working day and night.
+                    </p>
+                    <p>
+                      My side was the application layer and QA. Some of those
+                      travelers were on 2G, so I architected the frontend to load
+                      on the world&rsquo;s slowest connections, and put a GraphQL
+                      backend-for-frontend in front of the Azure APIs — every
+                      screen pulled exactly what it needed, with the real
+                      endpoints and sensitive health data never exposed to the
+                      browser.
                     </p>
                   </div>
                   <ul className="feature-outcomes">
                     <li>
                       <span className="mk" />
                       <span>
-                        <b>National platform</b> — the government&rsquo;s COVID
-                        screening, checked at the country&rsquo;s airport gates
+                        <b>Every traveler verified</b> — automatically at the
+                        e-gate, or by an officer&rsquo;s passport scan
                       </span>
                     </li>
                     <li>
                       <span className="mk" />
                       <span>
-                        <b>Offline-resilient gates</b> — kept clearing passengers
-                        straight through network outages
+                        <b>Application delivered in 4 months</b> — a five-person
+                        team, day and night, under pandemic pressure
                       </span>
                     </li>
                     <li>
                       <span className="mk" />
                       <span>
-                        <b>Four portals</b> (applicant, lab, government, gate)
-                        threaded by one screening ID
+                        <b>Built for 2G</b> — a GraphQL BFF kept payloads lean and
+                        the real APIs and health data off the client
                       </span>
                     </li>
                   </ul>
