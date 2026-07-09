@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTheme } from "@/components/ThemeProvider";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function Nav() {
-  const { theme, toggleTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -30,13 +29,7 @@ export function Nav() {
           <a className="navlink" href="#contact">
             Contact
           </a>
-          <button
-            className="tbtn"
-            onClick={toggleTheme}
-            aria-label="Toggle theme"
-          >
-            {theme === "dark" ? "☀" : "☾"}
-          </button>
+          <ThemeToggle />
         </div>
       </div>
     </nav>
