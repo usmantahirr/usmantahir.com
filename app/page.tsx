@@ -379,8 +379,8 @@ export default function Home() {
                 </div>
                 <p className="lead disp">
                   <span className="em">
-                    As tech lead for the application layer, I built the national
-                    platform every UAE visa applicant passed through
+                    As tech lead for the application layer, I led the build of
+                    the national platform every UAE visa applicant passed through
                   </span>{" "}
                   — across every country with a UAE embassy — and I designed it
                   to keep clearing passengers even when the airport network
@@ -389,8 +389,10 @@ export default function Home() {
                 <div className="feature-body">
                   <div className="prose">
                     <p>
-                      The platform threaded a single visa-application ID through
-                      four portals — applicants applying from anywhere in the
+                      I led a team of five — across DevOps, React, UI, and QA —
+                      and owned the architecture across four portals and their
+                      backend. The platform threaded a single visa-application ID
+                      through all four: applicants applying from anywhere in the
                       world, labs uploading their test results, government
                       reviewers, and the airport gate. At the gate, an officer
                       scanned a passport and got a real-time status back, so the
