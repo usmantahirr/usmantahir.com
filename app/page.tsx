@@ -373,61 +373,49 @@ export default function Home() {
                     <span className="n">Featured</span>Systems at Scale
                   </span>
                   <span className="casesub">
-                    Abu Dhabi Government · national visa &amp; health-screening
-                    platform · via Systems Limited · 2020 · contract
+                    Abu Dhabi Government · national COVID-screening platform · via
+                    Systems Limited · 2020 · contract
                   </span>
                 </div>
                 <p className="lead disp">
                   <span className="em">
-                    As tech lead for the application layer, I led the build of
-                    the national platform every UAE visa applicant passed through
+                    As application-side tech lead, I led the build of the
+                    UAE&rsquo;s national COVID-screening platform
                   </span>{" "}
-                  — across every country with a UAE embassy — and I designed it
-                  to keep clearing passengers even when the airport network
-                  dropped.
+                  — with airport gates that kept clearing passengers even when
+                  the network dropped.
                 </p>
                 <div className="feature-body">
                   <div className="prose">
                     <p>
-                      I led a team of five — across DevOps, React, UI, and QA —
-                      and owned the architecture across four portals and their
-                      backend. The platform threaded a single visa-application ID
-                      through all four: applicants applying from anywhere in the
-                      world, labs uploading their test results, government
-                      reviewers, and the airport gate. At the gate, an officer
-                      scanned a passport and got a real-time status back, so the
-                      whole journey resolved on one ID.
-                    </p>
-                    <p>
-                      The hard part was that gate. Airport networks drop and
-                      immigration can&rsquo;t stop — so the gates ran on
-                      offline-resilient local servers that keep clearing
-                      passengers and reconcile with the central system once the
-                      connection returns. I unified all four portals under one
-                      design system so they looked and behaved as a single
-                      product.
+                      I led a team of five — DevOps, React, UI, and QA — and
+                      owned the architecture end to end. Its hard part was the
+                      airport gate: immigration can&rsquo;t stop when a network
+                      drops. So I ran the gates on offline-resilient local servers
+                      that kept clearing passengers and reconciled with the
+                      central system once the connection came back.
                     </p>
                   </div>
                   <ul className="feature-outcomes">
                     <li>
                       <span className="mk" />
                       <span>
-                        <b>National scale</b> — every UAE visa applicant, across
-                        every country with a UAE embassy
+                        <b>National platform</b> — the government&rsquo;s COVID
+                        screening, checked at the country&rsquo;s airport gates
                       </span>
                     </li>
                     <li>
                       <span className="mk" />
                       <span>
-                        <b>Offline-resilient gates</b> — immigration keeps
-                        clearing passengers straight through network outages
+                        <b>Offline-resilient gates</b> — kept clearing passengers
+                        straight through network outages
                       </span>
                     </li>
                     <li>
                       <span className="mk" />
                       <span>
-                        <b>One system, four portals</b> (applicant, lab,
-                        government, gate) threaded by a single visa-application ID
+                        <b>Four portals</b> (applicant, lab, government, gate)
+                        threaded by one screening ID
                       </span>
                     </li>
                   </ul>
