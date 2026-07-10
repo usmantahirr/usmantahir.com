@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "usmantahir-v2",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-lc", "cd 'usmantahir.com-v2' && npm run dev -- -p 3001"],
+      "port": 3001
+    }
+  ]
+}
