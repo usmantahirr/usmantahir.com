@@ -29,6 +29,9 @@ export function Nav() {
           <a className="navlink" href="#contact">
             Contact
           </a>
+          <a className="navcontact" href="#contact">
+            Contact
+          </a>
           <ThemeToggle />
         </div>
       </div>

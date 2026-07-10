@@ -151,6 +151,19 @@ a:hover {
 .navlink:hover {
   color: var(--ink);
 }
+.navcontact {
+  display: none;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+.navcontact:hover {
+  color: var(--ink);
+}
 .tbtn {
   width: 38px;
   height: 38px;
@@ -1018,6 +1031,9 @@ a:hover {
   }
   .navlink {
     display: none;
+  }
+  .navcontact {
+    display: inline-flex;
   }
   .hmedia {
     width: 84%;

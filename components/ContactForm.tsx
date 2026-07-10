@@ -68,7 +68,8 @@ export function ContactForm() {
         </div>
         {status === "error" && (
           <p className="formerror" role="alert">
-            {error || "Something went wrong. Please try again."}
+            {error || "Something went wrong."} You can also email me directly at{" "}
+            <a href="mailto:hello@usmantahir.com">hello@usmantahir.com</a>.
           </p>
         )}
         <button
