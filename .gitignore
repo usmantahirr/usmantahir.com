@@ -43,6 +43,3 @@ next-env.d.ts
 # Local-only portrait assets (private source photos + exploration library) — not for public deploy
 /public/portrait/
 /public/Potrait Source/
-# hero video assets committed separately with the hero integration
-/public/hero-walk-light.mp4
-/public/hero-hold-light.png

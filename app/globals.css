@@ -19,13 +19,13 @@ body {
   --surface2: #f6ecd9;
   --ink: #22190f;
   --ink2: #4a3d2e;
-  --muted: #7c6b54;
+  --muted: #6f5e47;
   --line: #e1d0b1;
   --line2: #d6c29e;
   --ember: #be4a22;
   --ember-ink: #a63c18;
   --emberSoft: rgba(190, 74, 34, 0.1);
-  --glow: rgba(224, 150, 60, 0.17);
+  --glow: rgba(224, 150, 60, 0.09);
   font-family: var(--font-hanken), system-ui, sans-serif;
   color: var(--ink);
   background: var(--bg);
@@ -48,7 +48,7 @@ body {
   --ember: #e0592a;
   --ember-ink: #ec7c4f;
   --emberSoft: rgba(224, 89, 42, 0.14);
-  --glow: rgba(224, 120, 40, 0.14);
+  --glow: rgba(224, 120, 40, 0.08);
 }
 .disp {
   font-family: var(--font-onest), system-ui, sans-serif;
@@ -132,24 +132,14 @@ a:hover {
   gap: 20px;
 }
 .mark {
-  font-family: var(--font-onest);
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: -0.01em;
-  color: var(--ink);
-  display: flex;
-  align-items: center;
-  gap: 9px;
-}
-.marktag {
   font-family: var(--font-mono);
-  font-size: 10.5px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  border: 1px solid var(--line2);
-  padding: 3px 8px;
-  border-radius: 999px;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0;
+  color: var(--ink);
+}
+.markdot {
+  color: var(--ember);
 }
 .navlinks {
   display: flex;
@@ -292,7 +282,7 @@ a:hover {
       rgba(0, 0, 0, 0.5) 15%,
       #000 29%
     ),
-    linear-gradient(180deg, transparent 0%, #000 10%);
+    linear-gradient(180deg, transparent 0%, #000 3%);
   -webkit-mask-composite: source-in;
   mask-image: linear-gradient(
       90deg,
@@ -300,7 +290,7 @@ a:hover {
       rgba(0, 0, 0, 0.5) 15%,
       #000 29%
     ),
-    linear-gradient(180deg, transparent 0%, #000 10%);
+    linear-gradient(180deg, transparent 0%, #000 3%);
   mask-composite: intersect;
 }
 .mvid-dark {
@@ -1093,7 +1083,7 @@ a:hover {
   .hmedia {
     position: absolute;
     left: 50%;
-    top: 56px;
+    top: 76px;
     bottom: 0;
     right: auto;
     transform: translateX(-50%);
@@ -1105,7 +1095,7 @@ a:hover {
   }
   .hmedia video,
   .hmedia img {
-    height: calc(100svh - 56px);
+    height: calc(100svh - 76px);
     width: auto;
     max-width: none;
     object-fit: contain;

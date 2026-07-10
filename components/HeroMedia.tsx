@@ -1,47 +1,66 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTheme } from "@/components/ThemeProvider";
+
+// The character walks in and waves once on load, then we freeze on the final
+// standing frame so he simply stays — no re-looping. Each theme has its own
+// clip + matching freeze frame (light = cream bg, dark = chocolate bg) so the
+// masked edges blend into the current theme background.
+const MEDIA = {
+  light: {
+    video: "/hero-walk-light.mp4",
+    poster: "/hero-poster-light.jpg",
+    hold: "/hero-hold-light.jpg",
+  },
+  dark: {
+    video: "/hero-walk-dark.mp4",
+    poster: "/hero-poster-dark.jpg",
+    hold: "/hero-hold-dark.jpg",
+  },
+} as const;
 
 export function HeroMedia() {
   const { theme } = useTheme();
-  const lightRef = useRef<HTMLVideoElement>(null);
-  const darkRef = useRef<HTMLVideoElement>(null);
+  const key = theme === "dark" ? "dark" : "light";
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [entered, setEntered] = useState(false);
 
+  // Reduced-motion users skip the walk-in and get the static portrait.
   useEffect(() => {
-    // Only the active theme's video is fetched and played; the other stays on
-    // its poster (preload="none") until the theme is switched to it.
-    const active = theme === "dark" ? darkRef.current : lightRef.current;
-    const inactive = theme === "dark" ? lightRef.current : darkRef.current;
-    if (active) {
-      active.muted = true;
-      active.play().catch(() => {});
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+      setEntered(true);
     }
-    if (inactive) inactive.pause();
-  }, [theme]);
+  }, []);
+
+  // Play the entrance once (muted autoplay); play() is a backstop for browsers
+  // that don't honor the autoPlay attribute.
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v || entered) return;
+    v.muted = true;
+    v.play().catch(() => {});
+  }, [key, entered]);
+
+  const { video, poster, hold } = MEDIA[key];
 
   return (
     <div className="hmedia" aria-hidden="true">
-      <video
-        ref={lightRef}
-        className="mvid-light"
-        src="/character-light-loop.mp4"
-        poster="/character-light.jpg"
-        loop
-        playsInline
-        muted
-        preload="none"
-      />
-      <video
-        ref={darkRef}
-        className="mvid-dark"
-        src="/character-dark-loop.mp4"
-        poster="/character-dark.jpg"
-        loop
-        playsInline
-        muted
-        preload="none"
-      />
+      {entered ? (
+        <img src={hold} alt="" />
+      ) : (
+        <video
+          key={key}
+          ref={videoRef}
+          src={video}
+          poster={poster}
+          autoPlay
+          playsInline
+          muted
+          preload="auto"
+          onEnded={() => setEntered(true)}
+        />
+      )}
     </div>
   );
 }
