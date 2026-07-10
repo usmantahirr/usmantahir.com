@@ -9,20 +9,15 @@ export function HeroMedia() {
   const darkRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const dark = theme === "dark";
-    const light = lightRef.current;
-    const darkv = darkRef.current;
-    [light, darkv].forEach((v) => {
-      if (v) v.muted = true;
-    });
-    if (light) {
-      if (dark) light.pause();
-      else light.play().catch(() => {});
+    // Only the active theme's video is fetched and played; the other stays on
+    // its poster (preload="none") until the theme is switched to it.
+    const active = theme === "dark" ? darkRef.current : lightRef.current;
+    const inactive = theme === "dark" ? lightRef.current : darkRef.current;
+    if (active) {
+      active.muted = true;
+      active.play().catch(() => {});
     }
-    if (darkv) {
-      if (dark) darkv.play().catch(() => {});
-      else darkv.pause();
-    }
+    if (inactive) inactive.pause();
   }, [theme]);
 
   return (
@@ -32,22 +27,20 @@ export function HeroMedia() {
         className="mvid-light"
         src="/character-light-loop.mp4"
         poster="/character-light.jpg"
-        autoPlay
         loop
         playsInline
         muted
-        preload="metadata"
+        preload="none"
       />
       <video
         ref={darkRef}
         className="mvid-dark"
         src="/character-dark-loop.mp4"
         poster="/character-dark.jpg"
-        autoPlay
         loop
         playsInline
         muted
-        preload="metadata"
+        preload="none"
       />
     </div>
   );
