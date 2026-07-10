@@ -717,7 +717,6 @@ a:hover {
   letter-spacing: -0.02em;
   color: var(--ink);
   margin: 22px 0 0;
-  max-width: 24ch;
 }
 .patternq .em {
   color: var(--ember);
@@ -865,7 +864,6 @@ a:hover {
   border-left: 2px solid var(--ember);
   padding: 6px 0 6px 32px;
   margin-top: 44px;
-  max-width: 60ch;
 }
 .approach p {
   font-size: clamp(1.08rem, 1.5vw, 1.28rem);
