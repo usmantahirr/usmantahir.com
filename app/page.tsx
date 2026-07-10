@@ -497,8 +497,6 @@ export default function Home() {
                 <span className="skilltech">
                   Auth0<span className="sep">·</span>Clerk
                   <span className="sep">·</span>Keycloak
-                  <span className="sep">·</span>One Identity
-                  <span className="sep">·</span>OAuth2
                   <span className="sep">·</span>2FA
                 </span>
               </div>

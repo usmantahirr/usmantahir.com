@@ -16,9 +16,7 @@ export function Nav() {
   return (
     <nav className={`nav${scrolled ? " scrolled" : ""}`}>
       <div className="navin">
-        <div className="mark">
-          Usman Tahir<span className="marktag">SPE</span>
-        </div>
+        <div className="mark">Usman Tahir</div>
         <div className="navlinks">
           <a className="navlink" href="#work">
             Work
