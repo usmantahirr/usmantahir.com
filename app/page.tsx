@@ -552,7 +552,8 @@ export default function Home() {
         <div className="wrap">
           <div className="contactgrid">
             <div className="reveal">
-              <p className="eyebrow">Contact</p>
+              <h2 className="sr-only">Contact</h2>
+              <p className="eyebrow" aria-hidden="true">Contact</p>
               <a className="cmail" href="mailto:hello@usmantahir.com">
                 hello@usmantahir.com
               </a>

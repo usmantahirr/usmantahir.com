@@ -27,7 +27,7 @@ export function ContactForm() {
     return (
       <div className="reveal d1">
         <div className="sent">
-          <h4 className="disp">Thanks — message sent.</h4>
+          <h3 className="disp">Thanks — message sent.</h3>
           <p>I&rsquo;ll get back to you shortly at the address you left.</p>
         </div>
       </div>

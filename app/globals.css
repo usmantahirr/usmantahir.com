@@ -63,6 +63,22 @@ a {
 a:hover {
   color: var(--ember);
 }
+/* keyboard-only focus ring, on-brand ember (mouse clicks don't trigger it) */
+:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 3px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .grain {
   position: fixed;
   inset: 0;
@@ -958,7 +974,7 @@ a:hover {
   padding: 28px;
   text-align: left;
 }
-.sent h4 {
+.sent h3 {
   font-family: var(--font-onest);
   font-weight: 700;
   font-size: 1.3rem;

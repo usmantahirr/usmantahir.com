@@ -26,7 +26,7 @@ export function HeroMedia() {
   }, [theme]);
 
   return (
-    <div className="hmedia">
+    <div className="hmedia" aria-hidden="true">
       <video
         ref={lightRef}
         className="mvid-light"
