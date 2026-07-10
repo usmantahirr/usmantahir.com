@@ -66,9 +66,7 @@ export default function Home() {
               {/* Fidamy */}
               <article className="case reveal">
                 <div className="casetop">
-                  <span className="caselabel">
-                    <span className="n">01</span>Platform Ownership
-                  </span>
+                  <span className="caselabel">Platform Ownership</span>
                   <span className="casesub">
                     Fidamy · device insurance via retailers · Amsterdam ·
                     2024–2026
@@ -168,9 +166,7 @@ export default function Home() {
               {/* Droobi */}
               <article className="case reveal">
                 <div className="casetop">
-                  <span className="caselabel">
-                    <span className="n">02</span>Inherited Leadership
-                  </span>
+                  <span className="caselabel">Inherited Leadership</span>
                   <span className="casesub">
                     Droobi Health · regulated digital-health platform · Doha,
                     Qatar · 2019–2021
@@ -273,9 +269,7 @@ export default function Home() {
               {/* Mustaa */}
               <article className="case reveal">
                 <div className="casetop">
-                  <span className="caselabel">
-                    <span className="n">03</span>Founder Thinking
-                  </span>
+                  <span className="caselabel">Founder Thinking</span>
                   <span className="casesub">
                     Mustaa · fractional yacht-ownership platform · Rotterdam ·
                     2023–2025
