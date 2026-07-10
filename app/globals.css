@@ -253,7 +253,7 @@ a:hover {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: radial-gradient(56% 48% at 96% -10%, var(--glow), transparent 55%),
+  background: radial-gradient(52% 46% at 24% -8%, var(--glow), transparent 60%),
     linear-gradient(155deg, var(--bg) 0%, var(--bg2) 100%);
 }
 .hmedia {
@@ -270,7 +270,7 @@ a:hover {
 }
 .hmedia video,
 .hmedia img {
-  height: 90%;
+  height: 96%;
   width: auto;
   max-width: none;
   object-fit: contain;
@@ -282,7 +282,7 @@ a:hover {
       rgba(0, 0, 0, 0.5) 15%,
       #000 29%
     ),
-    linear-gradient(180deg, transparent 0%, #000 3%);
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 10%);
   -webkit-mask-composite: source-in;
   mask-image: linear-gradient(
       90deg,
@@ -290,7 +290,7 @@ a:hover {
       rgba(0, 0, 0, 0.5) 15%,
       #000 29%
     ),
-    linear-gradient(180deg, transparent 0%, #000 3%);
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 10%);
   mask-composite: intersect;
 }
 .mvid-dark {
@@ -1036,9 +1036,9 @@ a:hover {
   .hmedia video,
   .hmedia img {
     -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 38%),
-      linear-gradient(180deg, transparent 0%, #000 12%);
+      linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 12%);
     mask-image: linear-gradient(90deg, transparent 0%, #000 38%),
-      linear-gradient(180deg, transparent 0%, #000 12%);
+      linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 12%);
   }
   .herocontent {
     padding: 140px 0 60px;
