@@ -279,6 +279,12 @@ a:hover {
 }
 .hmedia video,
 .hmedia img {
+  /* The clip and the freeze frame are stacked in the same spot (identical
+     intrinsic size) so the video→still handoff is a crossfade, never an
+     element swap. */
+  position: absolute;
+  right: 0;
+  bottom: 0;
   height: 96%;
   width: auto;
   max-width: none;
@@ -305,6 +311,29 @@ a:hover {
     ),
     linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 10%);
   mask-composite: intersect;
+}
+/* The entrance clip sits on top and crossfades away when it ends. */
+.hmedia-clip {
+  z-index: 2;
+  transition: opacity 0.55s ease;
+}
+.hmedia-clip.ended {
+  opacity: 0;
+}
+/* The freeze frame is always mounted (so it downloads + decodes up front)
+   but hidden under the clip during playback; it flips on at the exact moment
+   the clip begins its fade, so there is nothing to load and no dip. */
+.hmedia-hold {
+  z-index: 1;
+  opacity: 0;
+}
+.hmedia-hold.shown {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hmedia-clip {
+    transition: none;
+  }
 }
 .mvid-dark {
   display: none;
