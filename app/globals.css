@@ -1128,19 +1128,27 @@ a:hover {
   }
   .hmedia {
     position: absolute;
-    left: 50%;
+    left: 0;
+    right: 0;
     top: 76px;
     bottom: 0;
-    right: auto;
-    transform: translateX(-50%);
     width: auto;
     height: auto;
     opacity: 1;
     display: block;
     margin: 0;
+    /* Full-width clipped box: the centered character (taller/wider than the
+       phone) is clipped here so it can never widen the page. */
+    overflow: hidden;
   }
   .hmedia video,
   .hmedia img {
+    /* Both layers are absolutely stacked (base rule), so center them on the
+       screen midline directly — .hmedia collapses to zero width here. */
+    left: 50%;
+    right: auto;
+    bottom: 0;
+    transform: translateX(-50%);
     height: calc(100svh - 76px);
     width: auto;
     max-width: none;
