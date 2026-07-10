@@ -482,12 +482,6 @@ a:hover {
   gap: 16px;
   margin-bottom: 14px;
 }
-.secnum {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--ember);
-  letter-spacing: 0.1em;
-}
 .sectitle {
   font-family: var(--font-onest);
   font-weight: 700;
@@ -851,12 +845,6 @@ a:hover {
 .skill:hover {
   background: color-mix(in srgb, var(--surface) 42%, var(--bg));
 }
-.skillnum {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--muted);
-  letter-spacing: 0.1em;
-}
 .skillname {
   font-family: var(--font-onest);
   font-weight: 700;
@@ -879,15 +867,14 @@ a:hover {
 }
 /* approach / this site */
 .approach {
-  border-left: 2px solid var(--ember);
-  padding: 6px 0 6px 32px;
   margin-top: 44px;
 }
 .approach p {
-  font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+  font-size: clamp(1.18rem, 1.7vw, 1.5rem);
   line-height: 1.6;
   color: var(--ink);
   margin: 0;
+  text-wrap: pretty;
 }
 .approach .em {
   color: var(--ember);

@@ -68,7 +68,6 @@ export function Timeline() {
     <section className="section" id="career">
       <div className="wrap">
         <div className="sechead reveal">
-          <span className="secnum">03</span>
           <h2 className="sectitle disp">Earlier career</h2>
         </div>
         <p className="secintro reveal">

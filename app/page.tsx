@@ -54,7 +54,6 @@ export default function Home() {
         <section className="section" id="work">
           <div className="wrap">
             <div className="sechead reveal">
-              <span className="secnum">01</span>
               <h2 className="sectitle disp">Selected work</h2>
             </div>
             <p className="secintro reveal">
@@ -438,7 +437,6 @@ export default function Home() {
         <section className="section" id="about">
           <div className="wrap">
             <div className="sechead reveal">
-              <span className="secnum">02</span>
               <h2 className="sectitle disp">The pattern</h2>
             </div>
             <div className="pattern reveal">
@@ -465,7 +463,6 @@ export default function Home() {
         <section className="section" id="skills">
           <div className="wrap">
             <div className="sechead reveal">
-              <span className="secnum">04</span>
               <h2 className="sectitle disp">Capabilities</h2>
             </div>
             <p className="secintro reveal">
@@ -474,7 +471,6 @@ export default function Home() {
             </p>
             <div className="skillgrid reveal">
               <div className="skill">
-                <span className="skillnum">01</span>
                 <span className="skillname disp">Platform Engineering</span>
                 <span className="skilltech">
                   Next.js<span className="sep">·</span>React
@@ -484,7 +480,6 @@ export default function Home() {
                 </span>
               </div>
               <div className="skill">
-                <span className="skillnum">02</span>
                 <span className="skillname disp">Payments</span>
                 <span className="skilltech">
                   Stripe<span className="sep">·</span>Twikey
@@ -492,7 +487,6 @@ export default function Home() {
                 </span>
               </div>
               <div className="skill">
-                <span className="skillnum">03</span>
                 <span className="skillname disp">Identity &amp; Auth</span>
                 <span className="skilltech">
                   Auth0<span className="sep">·</span>Clerk
@@ -501,7 +495,6 @@ export default function Home() {
                 </span>
               </div>
               <div className="skill">
-                <span className="skillnum">04</span>
                 <span className="skillname disp">Delivery &amp; Quality</span>
                 <span className="skilltech">
                   GitHub Actions<span className="sep">·</span>GitLab CI
@@ -511,7 +504,6 @@ export default function Home() {
                 </span>
               </div>
               <div className="skill skill-wide">
-                <span className="skillnum">05</span>
                 <span className="skillname disp">Observability</span>
                 <span className="skilltech">
                   Sentry<span className="sep">·</span>New Relic
@@ -526,7 +518,6 @@ export default function Home() {
         <section className="section" id="approach">
           <div className="wrap">
             <div className="sechead reveal">
-              <span className="secnum">05</span>
               <h2 className="sectitle disp">How I approach problems</h2>
             </div>
             <div className="approach reveal">
