@@ -811,6 +811,17 @@ a:hover {
   color: var(--muted);
   white-space: nowrap;
 }
+/* On phones the year column squeezes the text into a narrow strip, so stack
+   it as a small label above the company instead. */
+@media (max-width: 600px) {
+  .tlrow {
+    grid-template-columns: 1fr;
+  }
+  .tlyear {
+    order: -1;
+    margin-bottom: 4px;
+  }
+}
 .tldetail {
   display: grid;
   grid-template-rows: 0fr;
@@ -900,6 +911,49 @@ a:hover {
 }
 .skill-wide {
   grid-column: 1 / -1;
+}
+/* Certification in progress: same pill language as the hero's availability
+   badge, but a hollow, static dot so it reads "not yet" and doesn't compete
+   with the live pulse. */
+.certpill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 8px 16px 8px 13px;
+  border: 1px solid var(--line2);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 60%, transparent);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+.certpill b {
+  font-weight: 500;
+  color: var(--ink);
+}
+.certdot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: 1.5px solid var(--ember);
+}
+.certsep {
+  color: var(--ember);
+  opacity: 0.6;
+  margin: 0 8px;
+}
+@media (max-width: 600px) {
+  .certpill {
+    border-radius: 14px;
+    align-items: flex-start;
+  }
+  .certdot {
+    margin-top: 5px;
+  }
 }
 /* approach / this site */
 .approach {

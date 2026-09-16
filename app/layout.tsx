@@ -27,11 +27,11 @@ const jetbrains = JetBrains_Mono({
 
 const SITE_URL = "https://usmantahir.com";
 const DESCRIPTION =
-  "Usman Tahir — senior product engineer, Amsterdam. 10+ years building and owning products end-to-end across fintech, insurance, and healthcare.";
+  "Usman Tahir, senior product engineer in Amsterdam. 10+ years building and owning products end-to-end across fintech, insurance, and healthcare.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Usman Tahir — Senior Product Engineer",
+  title: "Usman Tahir · Senior Product Engineer",
   description: DESCRIPTION,
   authors: [{ name: "Usman Tahir", url: SITE_URL }],
   keywords: [
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: "Usman Tahir — Senior Product Engineer",
+    title: "Usman Tahir · Senior Product Engineer",
     description: DESCRIPTION,
     siteName: "Usman Tahir",
     locale: "en_US",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Usman Tahir — Senior Product Engineer",
+    title: "Usman Tahir · Senior Product Engineer",
     description: DESCRIPTION,
     images: ["/portrait.png"],
   },
