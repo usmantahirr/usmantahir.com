@@ -77,10 +77,6 @@ export function Timeline() {
         <div className="sechead reveal">
           <h2 className="sectitle disp">Other experience</h2>
         </div>
-        <p className="secintro reveal">
-          Other work across regulated banking, telecom integration, IoT,
-          security tooling, and SaaS.
-        </p>
         <div
           ref={tlRef}
           className={`tl reveal${revealed ? " in" : ""}${

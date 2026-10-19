@@ -23,8 +23,8 @@ export function Nav() {
           <a className="navlink" href="#work">
             Work
           </a>
-          <a className="navlink" href="#about">
-            About
+          <a className="navlink" href="#skills">
+            Capabilities
           </a>
           <a className="navlink" href="#contact">
             Contact

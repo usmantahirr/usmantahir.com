@@ -13,19 +13,19 @@ body {
 }
 
 .site {
-  --bg: #f1e1c6;
-  --bg2: #ead8b8;
-  --surface: #fbf4e8;
-  --surface2: #f6ecd9;
+  --bg: #f7f1e8;
+  --bg2: #f0e8dc;
+  --surface: #fdfaf5;
+  --surface2: #f6f0e6;
   --ink: #22190f;
   --ink2: #4a3d2e;
   --muted: #6f5e47;
-  --line: #e1d0b1;
-  --line2: #d6c29e;
-  --ember: #be4a22;
-  --ember-ink: #a63c18;
-  --emberSoft: rgba(190, 74, 34, 0.1);
-  --glow: rgba(224, 150, 60, 0.09);
+  --line: #e6ddcf;
+  --line2: #d9cdbb;
+  --ember: #9a4a35;
+  --ember-ink: #7d3a29;
+  --emberSoft: rgba(154, 74, 53, 0.1);
+  --glow: rgba(190, 120, 90, 0.09);
   font-family: var(--font-hanken), system-ui, sans-serif;
   color: var(--ink);
   background: var(--bg);
@@ -45,13 +45,13 @@ body {
   --muted: #9c8b74;
   --line: rgba(255, 255, 255, 0.09);
   --line2: rgba(255, 255, 255, 0.14);
-  --ember: #e0592a;
-  --ember-ink: #ec7c4f;
-  --emberSoft: rgba(224, 89, 42, 0.14);
-  --glow: rgba(224, 120, 40, 0.08);
+  --ember: #d4806a;
+  --ember-ink: #e39a85;
+  --emberSoft: rgba(212, 128, 106, 0.14);
+  --glow: rgba(200, 120, 90, 0.08);
 }
 .disp {
-  font-family: var(--font-onest), system-ui, sans-serif;
+  font-family: var(--font-display), system-ui, sans-serif;
 }
 .mono {
   font-family: var(--font-mono), ui-monospace, monospace;
@@ -267,7 +267,7 @@ a:hover {
      carries ~350px of empty space on his right, so a narrower stage would
      over-inset the *visible* body. This offset makes the visible character's
      right margin track the text's left margin across ultra-wide widths. */
-  right: max(-1%, calc((100% - 2460px) / 2));
+  right: max(5%, calc((100% - 2460px) / 2));
   bottom: 0;
   top: 0;
   width: 56%;
@@ -275,6 +275,19 @@ a:hover {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  pointer-events: none;
+}
+/* Floor shadow so the character stands on the page instead of floating. */
+.hmedia::after {
+  content: "";
+  position: absolute;
+  right: 4%;
+  bottom: 6px;
+  width: 46%;
+  height: 54px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(80, 45, 25, 0.16), transparent 70%);
+  filter: blur(8px);
   pointer-events: none;
 }
 .hmedia video,
@@ -352,6 +365,9 @@ a:hover {
      stage so it doesn't hug the left edge while the character floats far
      right. Laptop widths (<=1760px) are untouched — margin resolves to 0. */
   margin-left: max(0px, calc((100% - 1760px) / 2));
+  /* On wide screens the copy steps in from the left edge so it meets the
+     character instead of leaving the middle of the hero empty. */
+  padding-left: clamp(0px, (100vw - 1180px) * 0.22, 120px);
 }
 .hero .wrap {
   width: 100%;
@@ -362,13 +378,13 @@ a:hover {
   gap: 9px;
   padding: 7px 14px 7px 12px;
   border: 1px solid var(--line2);
-  border-radius: 999px;
+  border-radius: 8px;
   background: color-mix(in srgb, var(--surface) 60%, transparent);
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--ink2);
-  margin-bottom: 26px;
+  margin-top: 22px;
 }
 .livedot {
   width: 8px;
@@ -376,7 +392,7 @@ a:hover {
   border-radius: 999px;
   background: var(--ember);
   box-shadow: 0 0 0 0 var(--ember);
-  animation: pulse 2.4s infinite;
+  animation: pulse 2.4s 3;
 }
 @keyframes pulse {
   0% {
@@ -390,7 +406,7 @@ a:hover {
   }
 }
 .h1 {
-  font-family: var(--font-onest);
+  font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(2.5rem, 5.6vw, 5rem);
   line-height: 1.015;
@@ -409,6 +425,18 @@ a:hover {
   margin: 26px 0 0;
   font-weight: 400;
 }
+.stackline {
+  margin-top: 18px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  color: var(--ink2);
+}
+.stackline .sep {
+  color: var(--ember);
+  margin: 0 8px;
+  opacity: 0.7;
+}
 .metaline {
   font-family: var(--font-mono);
   font-size: 12.5px;
@@ -426,18 +454,26 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--font-onest);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: 15px;
   padding: 14px 24px;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   border: 1px solid transparent;
   transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.25s,
     border-color 0.25s, color 0.25s;
 }
 .btn:hover {
-  transform: translateY(-2px);
+  transform: none;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: progress;
+  transform: none;
 }
 .btn-primary {
   background: var(--ember);
@@ -452,11 +488,11 @@ a:hover {
    ~3.7:1. Darken the button surface (hue preserved) so white clears WCAG AA
    4.5:1, without touching the accent used elsewhere. */
 .site.dark .btn-primary {
-  background: #c2431f;
+  background: #8f4531;
   box-shadow: none;
 }
 .site.dark .btn-primary:hover {
-  background: #a8391a;
+  background: #7d3a29;
 }
 .btn-ghost {
   background: transparent;
@@ -464,8 +500,8 @@ a:hover {
   border-color: var(--line2);
 }
 .btn-ghost:hover {
-  border-color: var(--ember);
-  color: var(--ember);
+  border-color: var(--ink);
+  color: var(--ink);
 }
 .scrollcue {
   position: absolute;
@@ -493,7 +529,7 @@ a:hover {
   position: absolute;
   inset: 0;
   background: var(--ember);
-  animation: slidein 2.6s ease-in-out infinite;
+  animation: slidein 2.6s ease-in-out 3;
 }
 @keyframes slidein {
   0% {
@@ -510,7 +546,19 @@ a:hover {
 .section {
   position: relative;
   z-index: 3;
-  padding: 100px 0;
+  padding: 88px 0;
+}
+/* A deeper linen band gives the eye a rest between the long work section
+   and the capabilities rows; the hairlines alone were not enough of a break. */
+.section.band {
+  background: var(--bg2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 72px 0;
+}
+/* In dark the bg2 step is too small to read as a band, so lift it to surface2. */
+.site.dark .section.band {
+  background: var(--surface2);
 }
 .sechead {
   display: flex;
@@ -519,7 +567,7 @@ a:hover {
   margin-bottom: 14px;
 }
 .sectitle {
-  font-family: var(--font-onest);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   letter-spacing: -0.02em;
@@ -539,77 +587,66 @@ a:hover {
   margin: 0;
 }
 /* case studies */
+/* Four equal entries stacked on hairlines, no card boxes, so nothing merges
+   with the linen ground. Each entry: a header row (what it proves, then the
+   company and years), then the lead, the outcomes and the story toggle at
+   full width. Type sits a notch above body size so it reads, not skims. */
 .cases {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-  margin-top: 44px;
+  margin-top: 40px;
+  border-top: 1px solid var(--line2);
 }
 .case {
-  background: color-mix(in srgb, var(--surface) 32%, var(--bg));
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  padding: 40px;
-  position: relative;
-  overflow: hidden;
-  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  padding: 46px 0 42px;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
 }
-.case:hover {
-  border-color: var(--line2);
-  box-shadow: 0 22px 60px -40px rgba(80, 50, 20, 0.5);
-}
-.site.dark .case:hover {
-  box-shadow: 0 22px 60px -34px #000;
-}
-.casetop {
+.casewho {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  align-items: baseline;
+  gap: 8px 18px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-.caselabel {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+.casedim {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0;
+}
+.caseco {
+  font-size: 1.02rem;
+  color: var(--ink2);
+  margin: 0;
+}
+.caseyr {
   font-family: var(--font-mono);
   font-size: 12px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ember);
-  font-weight: 500;
-}
-.caselabel .n {
   color: var(--muted);
+  margin: 0;
 }
-.casesub {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--muted);
-  letter-spacing: 0.02em;
-}
-.casegrid {
-  display: block;
-  margin-top: 26px;
-}
-.casebody {
+.casewhat {
   min-width: 0;
 }
 .lead {
-  font-family: var(--font-onest);
+  font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(1.22rem, 1.9vw, 1.6rem);
-  line-height: 1.3;
-  letter-spacing: -0.015em;
+  font-size: clamp(1.3rem, 1.9vw, 1.65rem);
+  line-height: 1.34;
+  letter-spacing: -0.012em;
   color: var(--ink);
-  margin: 0 0 20px;
+  margin: 0;
 }
 .lead .em {
-  color: var(--ember);
+  color: var(--ink);
 }
 .prose p {
-  font-size: 1.02rem;
-  line-height: 1.62;
+  font-size: 1.08rem;
+  line-height: 1.65;
   color: var(--ink2);
   margin: 0 0 15px;
 }
@@ -633,12 +670,19 @@ a:hover {
   grid-template-rows: 1fr;
   opacity: 1;
 }
+/* The story opens beneath the outcomes, so give it a breath of air and a
+   hairline so it reads as a new layer rather than a fifth bullet. */
+.casestory.open .casestory-inner {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
 .casetoggle {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin: 6px 0 0 -6px;
-  padding: 14px 6px;
+  margin: 10px 0 0 -6px;
+  padding: 10px 6px;
   background: none;
   border: 0;
   cursor: pointer;
@@ -650,7 +694,7 @@ a:hover {
   transition: color 0.2s;
 }
 .casetoggle:hover {
-  color: var(--ember);
+  color: var(--ink);
 }
 .casetoggle-arrow {
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -667,17 +711,7 @@ a:hover {
   }
 }
 .outcomes {
-  border-top: 1px solid var(--line);
-  padding: 24px 0 0;
-  margin-top: 28px;
-}
-.outh {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin: 0 0 16px;
+  margin-top: 24px;
 }
 .outlist {
   list-style: none;
@@ -685,13 +719,13 @@ a:hover {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px 36px;
+  gap: 12px 40px;
 }
 .outlist li {
   display: flex;
   gap: 12px;
-  font-size: 0.96rem;
-  line-height: 1.45;
+  font-size: 1.05rem;
+  line-height: 1.5;
   color: var(--ink);
 }
 .outlist li .mk {
@@ -700,74 +734,35 @@ a:hover {
   width: 7px;
   height: 7px;
   border-radius: 2px;
-  background: var(--ember);
+  background: var(--ink2);
   transform: rotate(45deg);
 }
 .outlist li b {
   font-weight: 600;
   color: var(--ink);
 }
-/* featured project — lighter than the three pillar cases: single-column body
-   + a horizontal outcome strip instead of the sticky sidebar */
-.case.feature .lead {
-  margin-top: 26px;
-}
-.feature-body {
-  display: block;
-}
-.feature-outcomes {
-  list-style: none;
-  margin: 28px 0 0;
-  padding: 24px 0 0;
-  border-top: 1px solid var(--line);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-.feature-outcomes li {
-  display: flex;
-  gap: 12px;
-  font-size: 0.96rem;
-  line-height: 1.45;
-  color: var(--ink);
-}
-.feature-outcomes li .mk {
-  flex: none;
-  margin-top: 0.42em;
-  width: 7px;
-  height: 7px;
-  border-radius: 2px;
-  background: var(--ember);
-  transform: rotate(45deg);
-}
-.feature-outcomes li b {
-  font-weight: 600;
-  color: var(--ink);
-}
 @media (max-width: 900px) {
-  .feature-outcomes {
-    grid-template-columns: 1fr;
-    gap: 16px;
+  .case {
+    padding: 34px 0 30px;
+  }
+  .casewho {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
 }
-/* about / pattern */
-.pattern {
-  background: color-mix(in srgb, var(--surface) 32%, var(--bg));
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: clamp(40px, 6vw, 72px);
-}
-.patternq {
-  font-family: var(--font-onest);
+/* closes Selected work: the thread through the four stories, one line,
+   no card and no section of its own */
+.workclose {
+  font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(1.4rem, 2.6vw, 2.15rem);
-  line-height: 1.32;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-  margin: 22px 0 0;
-}
-.patternq .em {
-  color: var(--ember);
+  font-size: clamp(1.2rem, 1.7vw, 1.45rem);
+  line-height: 1.4;
+  letter-spacing: -0.012em;
+  color: var(--ink2);
+  max-width: 62ch;
+  margin: 40px 0 0;
+  text-wrap: pretty;
 }
 /* timeline */
 .tl {
@@ -795,7 +790,7 @@ a:hover {
   min-width: 0;
 }
 .tlco {
-  font-family: var(--font-onest);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.18rem;
   color: var(--ink);
@@ -862,7 +857,7 @@ a:hover {
   color: var(--ember);
 }
 .tltoggle .pm {
-  font-family: var(--font-onest);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: 15px;
   transition: transform 0.4s;
@@ -871,46 +866,35 @@ a:hover {
   transform: rotate(45deg);
 }
 /* skills */
+/* Capabilities as hairline rows, same language as the work ledger and the
+   timeline: label on the left, the stack on the right, no boxes. */
 .skillgrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  overflow: hidden;
-  margin-top: 44px;
+  margin-top: 36px;
+  border-top: 1px solid var(--line2);
 }
 .skill {
-  background: var(--bg);
-  padding: 30px 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  transition: background 0.3s;
-}
-.skill:hover {
-  background: color-mix(in srgb, var(--surface) 42%, var(--bg));
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 8px 32px;
+  align-items: baseline;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
 }
 .skillname {
-  font-family: var(--font-onest);
+  font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   letter-spacing: -0.01em;
   color: var(--ink);
 }
 .skilltech {
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   color: var(--ink2);
 }
 .skilltech .sep {
-  color: var(--ember);
-  margin: 0 7px;
-  opacity: 0.6;
-}
-.skill-wide {
-  grid-column: 1 / -1;
+  color: var(--muted);
+  margin: 0 5px;
 }
 /* Certification in progress: same pill language as the hero's availability
    badge, but a hollow, static dot so it reads "not yet" and doesn't compete
@@ -922,7 +906,7 @@ a:hover {
   margin-top: 22px;
   padding: 8px 16px 8px 13px;
   border: 1px solid var(--line2);
-  border-radius: 999px;
+  border-radius: 8px;
   background: color-mix(in srgb, var(--surface) 60%, transparent);
   font-family: var(--font-mono);
   font-size: 12px;
@@ -957,7 +941,7 @@ a:hover {
 }
 /* approach / this site */
 .approach {
-  margin-top: 44px;
+  margin-top: 28px;
 }
 .approach p {
   font-size: clamp(1.18rem, 1.7vw, 1.5rem);
@@ -967,7 +951,7 @@ a:hover {
   text-wrap: pretty;
 }
 .approach .em {
-  color: var(--ember);
+  color: var(--ink);
 }
 /* contact */
 .contact {
@@ -991,7 +975,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-family: var(--font-onest);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(1.3rem, 2.4vw, 1.9rem);
   color: var(--ink);
@@ -1054,7 +1038,7 @@ a:hover {
   text-align: left;
 }
 .sent h3 {
-  font-family: var(--font-onest);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.3rem;
   margin: 0 0 8px;
@@ -1090,13 +1074,27 @@ a:hover {
   color: var(--muted);
 }
 /* reveal */
-.reveal {
+/* Hero entrance: one orchestrated moment on load. The copy rises in short
+   ease-out steps while the character walks in; after that nothing moves. */
+.rise {
   opacity: 0;
-  transform: translateY(26px);
-  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
-    transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: translateY(14px);
+  animation: rise 0.55s cubic-bezier(0.2, 0, 0, 1) forwards;
 }
-.reveal.in {
+.r1 { animation-delay: 0.05s; }
+.r2 { animation-delay: 0.18s; }
+.r3 { animation-delay: 0.28s; }
+.r4 { animation-delay: 0.38s; }
+.r5 { animation-delay: 0.5s; }
+@keyframes rise {
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rise { opacity: 1; transform: none; animation: none; }
+}
+/* Motion rule: nothing fades up on scroll. The one exception is The Pattern
+   quote, the line the page exists to land. Ease-out, short. */
+.reveal {
   opacity: 1;
   transform: none;
 }
@@ -1131,13 +1129,6 @@ a:hover {
   /* The hero is orientation-based, not width-based: portrait tablets use the
      phone layout (see the mobile block below), landscape tablets fall through
      to the base laptop layout. So no tablet-specific hero rules live here. */
-  .casegrid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-  .outcomes {
-    position: static;
-  }
   .outlist {
     grid-template-columns: 1fr;
   }
@@ -1146,14 +1137,13 @@ a:hover {
     gap: 40px;
     padding: 70px 0;
   }
-  .skillgrid {
+  .skill {
     grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 16px 0;
   }
   .section {
     padding: 74px 0;
-  }
-  .case {
-    padding: 26px;
   }
 }
 /* Phone layout — also used for portrait tablets (any portrait viewport up to
@@ -1185,6 +1175,9 @@ a:hover {
     /* Full-width clipped box: the centered character (taller/wider than the
        phone) is clipped here so it can never widen the page. */
     overflow: hidden;
+  }
+  .hmedia::after {
+    display: none;
   }
   .hmedia video,
   .hmedia img {

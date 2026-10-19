@@ -28,7 +28,7 @@ export function ContactForm() {
       <div className="reveal d1">
         <div className="sent">
           <h3 className="disp">Thanks, message sent.</h3>
-          <p>I&rsquo;ll get back to you shortly at the address you left.</p>
+          <p>I read everything and reply within a day, at the address you left.</p>
         </div>
       </div>
     );
@@ -68,7 +68,7 @@ export function ContactForm() {
         </div>
         {status === "error" && (
           <p className="formerror" role="alert">
-            {error || "Something went wrong."} You can also email me directly at{" "}
+            {error || "Your message didn\u2019t send."} Try again, or email me directly at{" "}
             <a href="mailto:hello@usmantahir.com">hello@usmantahir.com</a>.
           </p>
         )}

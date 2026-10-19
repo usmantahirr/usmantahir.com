@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Onest, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Nav } from "@/components/Nav";
 
-const onest = Onest({
+const display = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-onest",
+  weight: "variable",
+  axes: ["opsz"],
+  variable: "--font-display",
   display: "swap",
 });
 
@@ -56,10 +57,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/portrait.png",
-        width: 896,
-        height: 1200,
-        alt: "Usman Tahir",
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Usman Tahir, senior product engineer. I build and own products end-to-end, from the problem to what ships.",
       },
     ],
   },
@@ -67,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Usman Tahir · Senior Product Engineer",
     description: DESCRIPTION,
-    images: ["/portrait.png"],
+    images: ["/og.png"],
   },
 };
 
@@ -81,7 +82,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${onest.variable} ${hanken.variable} ${jetbrains.variable}`}
+      className={`${display.variable} ${hanken.variable} ${jetbrains.variable}`}
       suppressHydrationWarning
     >
       <body className="site" suppressHydrationWarning>
