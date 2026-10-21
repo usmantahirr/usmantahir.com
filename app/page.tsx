@@ -3,6 +3,12 @@ import { RevealObserver } from "@/components/RevealObserver";
 import { Timeline } from "@/components/Timeline";
 import { ContactForm } from "@/components/ContactForm";
 import { CollapsibleStory } from "@/components/CollapsibleStory";
+import {
+  FidamySpecimen,
+  DroobiSpecimen,
+  MustaaSpecimen,
+  AbuDhabiSpecimen,
+} from "@/components/Specimens";
 
 export default function Home() {
   return (
@@ -69,6 +75,7 @@ export default function Home() {
                   <h3 className="casedim disp">Platform ownership</h3>
                   <p className="caseco">Fidamy · device insurance via retailers</p>
                   <p className="caseyr">Amsterdam · 2024 to 2026</p>
+                  <svg className="glyph" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 4 l10 4 v8 c0 7 -5 11 -10 14 c-5 -3 -10 -7 -10 -14 v-8 z" /><path d="M12 17 l4 4 l7 -8" /></svg>
                 </header>
                 <div className="casewhat">
                   <p className="lead disp">
@@ -76,8 +83,12 @@ export default function Home() {
                       I was the first engineer at a venture-backed insurtech,
                       and I built the entire customer-facing platform
                     </span>
-                    , from the first Figma flows to a live product embedded in
-                    retailer checkouts.
+                    ,{" "}
+                    <span className="hl">
+                      from the first Figma flows to a live product embedded in
+                      retailer checkouts
+                    </span>
+                    .
                   </p>
 <aside className="outcomes">
                   <ul className="outlist">
@@ -112,6 +123,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </aside>
+                  <FidamySpecimen />
                   <CollapsibleStory>
                     <p>
                       The first six months weren&rsquo;t code. Fidamy sells
@@ -163,13 +175,14 @@ export default function Home() {
                   <h3 className="casedim disp">Inherited leadership</h3>
                   <p className="caseco">Droobi Health · regulated digital health</p>
                   <p className="caseyr">Doha · 2019 to 2021</p>
+                  <svg className="glyph" viewBox="0 0 34 34" aria-hidden="true"><polyline points="4,21 10,21 13,13 18,26 22,17 25,21 30,21" /></svg>
                 </header>
                 <div className="casewhat">
                   <p className="lead disp">
                     <span className="em">
                       I was recruited to a Qatari health startup as its first
                       engineer on the ground, and I immediately took over a
-                      ten-person cross-platform team
+                      <span className="hl">ten-person cross-platform team</span>
                     </span>{" "}
                     (backend, Android, iOS, and web) while shipping the
                     product&rsquo;s frontend myself.
@@ -210,6 +223,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </aside>
+                  <DroobiSpecimen />
                   <CollapsibleStory>
                     <p>
                       I was brought in on a referral, not a job posting. I&rsquo;d
@@ -261,6 +275,7 @@ export default function Home() {
                   <h3 className="casedim disp">Founder thinking</h3>
                   <p className="caseco">Mustaa · fractional yacht ownership</p>
                   <p className="caseyr">Rotterdam · 2023 to 2025</p>
+                  <svg className="glyph" viewBox="0 0 34 34" aria-hidden="true"><path d="M5 23 q12 7 24 0 l-3 6 h-18 z" /><line x1="17" y1="23" x2="17" y2="5" /><path d="M17 6 l10 14 h-10 z" /><path d="M17 6 l-8 14 h8 z" /></svg>
                 </header>
                 <div className="casewhat">
                   <p className="lead disp">
@@ -269,8 +284,12 @@ export default function Home() {
                       stubborn idea
                     </span>
                     : you shouldn&rsquo;t need to be a millionaire to spend time
-                    on a yacht; you should be able to own a slice of one and use
-                    it when you want.
+                    on a yacht;{" "}
+                    <span className="hl">
+                      you should be able to own a slice of one and use it when
+                      you want
+                    </span>
+                    .
                   </p>
 <aside className="outcomes">
                   <ul className="outlist">
@@ -306,6 +325,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </aside>
+                  <MustaaSpecimen />
                   <CollapsibleStory>
                     <p>
                       Owning a yacht is out of reach for almost everyone, but the
@@ -359,6 +379,7 @@ export default function Home() {
                   <h3 className="casedim disp">Systems at scale</h3>
                   <p className="caseco">Abu Dhabi Government · via Systems Limited</p>
                   <p className="caseyr">Abu Dhabi · 2020 to 2021</p>
+                  <svg className="glyph" viewBox="0 0 34 34" aria-hidden="true"><rect x="8" y="5" width="18" height="24" rx="2" /><circle cx="17" cy="13" r="3.5" /><path d="M11 23 q6 -5 12 0" /><line x1="3" y1="17" x2="31" y2="17" strokeDasharray="2 3" /></svg>
                 </header>
                 <div className="casewhat">
                   <p className="lead disp">
@@ -366,8 +387,11 @@ export default function Home() {
                     As application-side tech lead, I led the build of the app Abu
                     Dhabi used to reopen to travel during COVID
                   </span>
-                  , verifying vaccination at visa time so the airport gates never
-                  turned into queues.
+                  , verifying vaccination at visa time{" "}
+                  <span className="hl">
+                    so the airport gates never turned into queues
+                  </span>
+                  .
                 </p>
                   <aside className="outcomes">
                     <ul className="outlist">
@@ -395,6 +419,7 @@ export default function Home() {
                     </li>
                   </ul>
                   </aside>
+                  <AbuDhabiSpecimen />
                   <CollapsibleStory>
                     <p>
                       The world needed to reopen, and vaccinated travel was the
