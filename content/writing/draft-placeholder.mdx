@@ -1,0 +1,113 @@
+---
+title: "Draft placeholder"
+date: 2026-10-30
+description: "Not a real post. A template for the first one, hidden in production."
+draft: true
+---
+
+This is a placeholder, not a post. It gives the first real post something to copy, and it shows every element the writing pages support so they can be checked in both themes. It stays on the dev server. Production builds, Vercel previews included, leave it out of the index, the feed and the sitemap, and its URL returns a 404.
+
+## Publishing a post
+
+1. Copy this file in `content/writing/` and rename it. The file name becomes the URL.
+2. Fill in the frontmatter at the top.
+3. Delete the `draft: true` line when it is ready to go out.
+
+```yaml
+---
+title: "The post title"
+date: 2026-10-30
+description: "One or two sentences. Shown on the index, in the feed and on share cards."
+---
+```
+
+| Field         | Required | Notes                                         |
+| ------------- | -------- | --------------------------------------------- |
+| `title`       | Yes      | Plain text.                                   |
+| `date`        | Yes      | `YYYY-MM-DD`. Sets the order on the index.    |
+| `description` | Yes      | Used wherever the post is summarized.         |
+| `draft`       | No       | `true` keeps the post on the dev server only. |
+
+The build fails and names the file if a required field is missing, so a broken post can't go out by accident.
+
+## Code
+
+Fence a block and name the language. Long lines scroll inside the block, so the page itself never scrolls sideways on a phone.
+
+```ts
+export function getPosts(): Post[] {
+  return readdirSync(POSTS_DIR)
+    .filter((file) => file.endsWith(".mdx"))
+    .map(readPost)
+    .filter((post) => SHOW_DRAFTS || !post.draft)
+    .sort((a, b) => b.date.localeCompare(a.date));
+}
+```
+
+```bash
+# Check what production will show. Drafts are gone from this build.
+npm run build && npm run start -- --port 3077
+```
+
+## Diagrams
+
+Wrap an inline SVG in `<Diagram>`. The `label` is what a screen reader gets, so it should say what the drawing says. Draw it twice: `sw` for wide screens and `sm` for phones. The class names set the colors, which is why the drawing below follows the theme.
+
+<Diagram
+  label="A post file is checked for draft: true. If it is set, the post stays on the dev server. If not, it becomes a page, a feed item and a sitemap entry."
+  caption="What happens to a post at build time."
+>
+  <svg className="sw" viewBox="0 0 820 180">
+    <rect className="ln sf" x="1" y="66" width="170" height="48" rx="7" />
+    <text className="t2" x="86" y="94" textAnchor="middle">post.mdx</text>
+    <path className="ln" d="M171 90 H292" />
+    <path className="ln" d="M286 84 l6 6 l-6 6" />
+    <rect className="ln sf" x="294" y="66" width="170" height="48" rx="7" />
+    <text className="t2" x="379" y="94" textAnchor="middle">draft: true?</text>
+    <path className="ln" d="M464 90 C 515 90, 515 40, 566 40" />
+    <path className="ln" d="M560 34 l6 6 l-6 6" />
+    <text x="508" y="44" textAnchor="middle">yes</text>
+    <path className="ln" d="M464 90 C 515 90, 515 140, 566 140" />
+    <path className="ln" d="M560 134 l6 6 l-6 6" />
+    <text x="508" y="150" textAnchor="middle">no</text>
+    <rect className="lt sf" x="568" y="16" width="250" height="48" rx="7" />
+    <text className="t2" x="693" y="44" textAnchor="middle">Dev server only</text>
+    <rect className="cls clf" x="568" y="116" width="250" height="48" rx="7" />
+    <text className="t2 tc" x="693" y="144" textAnchor="middle">Page, feed, sitemap</text>
+  </svg>
+  <svg className="sm" viewBox="0 0 327 268">
+    <rect className="ln sf" x="74" y="1" width="180" height="44" rx="7" />
+    <text className="t2" x="164" y="27" textAnchor="middle">post.mdx</text>
+    <path className="ln" d="M164 45 V88" />
+    <path className="ln" d="M158 82 l6 6 l6 -6" />
+    <rect className="ln sf" x="74" y="90" width="180" height="44" rx="7" />
+    <text className="t2" x="164" y="116" textAnchor="middle">draft: true?</text>
+    <path className="ln" d="M124 134 C 124 165, 78 165, 78 196" />
+    <path className="ln" d="M72 190 l6 6 l6 -6" />
+    <text x="86" y="164" textAnchor="middle">yes</text>
+    <path className="ln" d="M204 134 C 204 165, 249 165, 249 196" />
+    <path className="ln" d="M243 190 l6 6 l6 -6" />
+    <text x="244" y="164" textAnchor="middle">no</text>
+    <rect className="lt sf" x="1" y="198" width="154" height="68" rx="7" />
+    <text className="t2" x="78" y="228" textAnchor="middle">Dev server</text>
+    <text className="t2" x="78" y="246" textAnchor="middle">only</text>
+    <rect className="cls clf" x="172" y="198" width="154" height="68" rx="7" />
+    <text className="t2 tc" x="249" y="228" textAnchor="middle">Page, feed,</text>
+    <text className="t2 tc" x="249" y="246" textAnchor="middle">sitemap</text>
+  </svg>
+</Diagram>
+
+## Text
+
+A paragraph can carry **bold**, _italics_, `inline code` and [a link](/writing). Replace all of this with the actual post.
+
+### A smaller heading
+
+- A list item
+- Another list item, long enough to wrap onto a second line on a phone so the indent can be checked
+
+> A quotation sits here, set apart from the paragraphs around it.
+
+---
+
+Text after a divider.

@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Hanken_Grotesk, JetBrains_Mono } from "next/font/g
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Nav } from "@/components/Nav";
+import { FEED_ALTERNATE, OG_IMAGE, SITE_URL } from "@/lib/site";
 
 const display = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -26,7 +27,6 @@ const jetbrains = JetBrains_Mono({
   display: "swap",
 });
 
-const SITE_URL = "https://usmantahir.com";
 const DESCRIPTION =
   "Usman Tahir, senior product engineer in Amsterdam. 10+ years building and owning products end-to-end across fintech, insurance, and healthcare.";
 
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     "Insurtech",
     "Healthcare",
   ],
-  alternates: { canonical: "/" },
+  alternates: { canonical: "/", types: FEED_ALTERNATE },
   openGraph: {
     type: "website",
     url: SITE_URL,
@@ -55,20 +55,13 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     siteName: "Usman Tahir",
     locale: "en_US",
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Usman Tahir, senior product engineer. I build and own products end-to-end, from the problem to what ships.",
-      },
-    ],
+    images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Usman Tahir · Senior Product Engineer",
     description: DESCRIPTION,
-    images: ["/og.png"],
+    images: [OG_IMAGE.url],
   },
 };
 

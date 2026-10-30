@@ -1,10 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const inWriting = usePathname().startsWith("/writing");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -16,22 +19,29 @@ export function Nav() {
   return (
     <nav className={`nav${scrolled ? " scrolled" : ""}`}>
       <div className="navin">
-        <div className="mark">
+        <Link className="mark" href="/">
           usman<span className="markdot">·</span>tahir
-        </div>
+        </Link>
         <div className="navlinks">
-          <a className="navlink" href="#work">
+          <Link className="navlink" href="/#work">
             Work
-          </a>
-          <a className="navlink" href="#skills">
+          </Link>
+          <Link className="navlink" href="/#skills">
             Capabilities
-          </a>
-          <a className="navlink" href="#contact">
+          </Link>
+          <Link
+            className="navlink navkeep"
+            href="/writing"
+            aria-current={inWriting ? "page" : undefined}
+          >
+            Writing
+          </Link>
+          <Link className="navlink" href="/#contact">
             Contact
-          </a>
-          <a className="navcontact" href="#contact">
+          </Link>
+          <Link className="navcontact" href="/#contact">
             Contact
-          </a>
+          </Link>
           <a
             className="tbtn navsocial"
             href="https://www.linkedin.com/in/usmantahirr/"

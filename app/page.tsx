@@ -3,6 +3,7 @@ import { RevealObserver } from "@/components/RevealObserver";
 import { Timeline } from "@/components/Timeline";
 import { ContactForm } from "@/components/ContactForm";
 import { CollapsibleStory } from "@/components/CollapsibleStory";
+import { Footer } from "@/components/Footer";
 import {
   FidamySpecimen,
   DroobiSpecimen,
@@ -579,12 +580,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="foot">
-        <div className="footin">
-          <span>© 2026 Usman Tahir</span>
-          <span>Amsterdam · Senior Product Engineer</span>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
