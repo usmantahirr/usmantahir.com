@@ -1,0 +1,196 @@
+---
+title: "My AI coach's fixes kept coming back, so a table makes the decisions now"
+date: 2026-11-12
+description: "My AI coach's fixes kept coming back. Moving the decision out of the model and into a table of rules made each clash show up in a test."
+tags: ["AI engineering", "Architecture", "Bravilo"]
+card: "/writing/rules-as-regions/scenes/one-seat.webp"
+cardAlt: "Two knitted characters reaching for the same small seat in a row of tiny seats"
+draft: false
+---
+
+This is for anyone whose AI agent picks between actions: a refund, a support reply, an approval, a change to someone's workout. In October my AI gym coach kept breaking in the same way, and every fix made one file bigger. The decision about what to do next was in the wrong place. So I moved it. The model now reports what it read, code picks the action from a table of rules, and the tests fail when two rules could both apply and nobody has said which one wins.
+
+## The hotel
+
+<Figure
+  src="/writing/rules-as-regions/scenes/hotel-gym.webp"
+  side="right"
+  alt="A small knitted character in a tiny hotel gym, looking at an empty space marked out on the floor where a big machine should be, holding a single dumbbell"
+  caption="14 October: twelve commits named a trip or a hotel gym."
+  width={1600}
+  height={905}
+/>
+
+I wanted to take one piece of equipment out of a workout. So I told the coach: I don't have a Smith machine at this gym. (That's a barbell fixed on rails.)
+
+It started showing me exercises that had nothing to do with what I'd asked.
+
+My test cases caught it, so I fixed it. Then I found the opposite problem. If I listed what a hotel gym did have, the workout didn't change at all, because the code only kept track of what was missing. I fixed that too, and the next odd sentence found the next gap.
+
+## Round and round
+
+I could see it would get messy, and I didn't yet know a better way to build it. A message came in, the model answered, and code decided what to do next from that answer. When a case went wrong, I added a check for that case. Each fix was small, and each one made sense by itself.
+
+<Bars
+  label="chat.ts was 885 lines at the start of 10 October and 2,229 lines at 16:56 on 14 October."
+  caption="One file, four days, 50 commits. They include new features as well as fixes."
+  rows={[
+    { name: "10 October", value: 885 },
+    { name: "14 October, 16:56", value: 2229, shown: "2,229 lines" },
+  ]}
+/>
+
+The number that stopped me was the line count. The file that held all this, `chat.ts`, was 885 lines at the start of 10 October. By five o'clock on the 14th it was 2,229.
+
+I remember thinking: why does every fix go round in this same file? The rules had to be conflicting with each other somewhere, and that was going to come back and bite me later. It needed a proper fix, not another patch.
+
+## Moving the decision
+
+The trouble was what happened after the model answered. The model's reading of a sentence and the code's word lists disagreed, and each disagreement got one more special case.
+
+I could have kept the decision with the model and written it a longer, stricter prompt. But you can't run an overlap check on a prompt, and the same message can get a different action on a different try. If the model also chose the action, a misread sentence went straight into what the app did. So I took the choice away from it.
+
+<Flow
+  label="A message goes to the model, which reads it. The facts go to a table in code, which decides. The table produces one action."
+  caption="The model reads. Code decides, from the facts and the person's state. The table is code the model can't touch."
+  steps={[
+    { name: "Message" },
+    { name: "Model", sub: "reads facts" },
+    { name: "Table", sub: "facts + state, decides", mine: true },
+    { name: "One action" },
+  ]}
+/>
+
+The model reports what it found in the message, with the words it found it in. If those words aren't in the message, the fact is dropped.
+
+<Evidence
+  message="I want my money back. I only bought it yesterday."
+  caption="A made-up support message. Each fact has to quote the message, or it doesn't reach the table."
+  facts={[
+    { fact: "request = refund", quote: "I want my money back", kept: true },
+    { fact: "chargeback = yes", quote: "my bank reversed it" },
+  ]}
+/>
+
+A single table in code takes those facts, adds what it knows about the person's state, and picks one action. Since then the model can also suggest a few actions from a short list, like moving on to the next exercise. Code checks each suggestion and carries it out, or doesn't.
+
+## The seat map
+
+Picture a seat map on a plane, and every situation the coach could face as one seat.
+
+Each part of a situation gets a short, fixed list of values. Here's a made-up support agent, since my real table stays private:
+
+```text
+request:     none, refund, cancel
+chargeback:  no, yes
+window:      inside, outside
+```
+
+One value from each list makes one seat. This small map has 12 seats. My coach has 31 lists and about 16 trillion seats, far too many to check one at a time.
+
+A rule claims a block of seats. It names the lists it cares about and ignores the rest:
+
+```text
+rule A:  request = refund, window = inside  ->  issue refund
+rule B:  chargeback = yes                   ->  hand to a person
+```
+
+This isn't a new idea. Decision tables are decades old, and the DMN standard for them has a "unique" policy that forbids overlapping rules. What I did was put one between a language model and what my app does.
+
+<SeatMap
+  across="request"
+  down="chargeback"
+  cols={["none", "refund", "cancel"]}
+  rows={["no", "yes"]}
+  a={{ label: "rule A", col: "refund" }}
+  b={{ label: "rule B", row: "yes" }}
+  caption="The third list, window, is left out of the drawing. Rule A also needs the window to be inside."
+/>
+
+## Two rules, one seat
+
+<Figure
+  src="/writing/rules-as-regions/scenes/one-seat.webp"
+  side="left"
+  alt="Two plain knitted characters each reaching for the same small seat in a row of tiny seats, their hands meeting over it"
+  caption="Rule A says pay. Rule B says hand it to a person."
+  width={1600}
+  height={905}
+/>
+
+Look at a refund request, inside the window, on an account with a chargeback. Rule A says pay. Rule B says hand it to a person. Both claim that seat.
+
+With a pile of ifs, the first one reached wins, and nothing tells you it happened. You can't ask the code whether two branches contradict each other. With a table you can, because finding the overlap is a set intersection.
+
+So rules sit in tiers, and an earlier tier always wins. Inside one tier, a rule has to say whom it beats. Add a third rule and see what the test does:
+
+```text
+rule B:  chargeback = yes                   ->  hand to a person
+         beats rule A
+rule C:  request = cancel, chargeback = yes  ->  confirm the cancel
+```
+
+For every pair of rules in the same tier, the unit test skips the pair if they agree or one already beats the other. Otherwise it looks for seats both rules claim, and if it finds one, it fails and shows that seat.
+
+<PairCheck
+  caption="The test compares rules, never seats. It also fails on a cycle, on a rule that can never win, on a value that isn't on the map, and on anything but exactly one fallback."
+  pairs={[
+    { pair: "rule A × rule B", result: "shared, B beats A" },
+    { pair: "rule A × rule C", result: "no shared seats" },
+    { pair: "rule B × rule C", result: "shared, no winner: fail", fail: true },
+  ]}
+/>
+
+## What it looks like now
+
+<Figure
+  src="/writing/rules-as-regions/scenes/receipt.webp"
+  side="right"
+  alt="A small knitted character at a desk in the evening, calmly reading a long paper receipt that spills onto the floor, one row circled in red"
+  caption="Every reply logs the rules that decided it."
+  width={1600}
+  height={905}
+/>
+
+As of 12 November the table has 73 rules plus one fallback, in 11 tiers, over 31 lists. That's at most 435 same-tier pairs to compare, and 50 declared wins. It runs with the unit tests.
+
+Each reply logs the rules that decided it, so when the coach does something odd I can look up why.
+
+<Bars
+  label="chat.ts was 2,229 lines at 16:56 on 14 October and 1,873 at the end of that day, after the table went in."
+  caption="The file shrank the day the table went in."
+  rows={[
+    { name: "14 Oct, before", value: 2229 },
+    { name: "14 Oct, after", value: 1873, mine: true },
+  ]}
+/>
+
+The file did shrink, from 2,229 lines to 1,873 on the day the table went in. It's 2,768 today, because the app kept growing. What changed is that a new behaviour is now a row in a table, and if it clashes with an old one, the test tells me before a user finds it.
+
+## What it can't do
+
+The check proves nothing is ambiguous by accident. It can't tell you the rules are right. A wrong winner passes, so you still need tests of the real behaviour.
+
+A rule is only as good as what it's given. The quote check stops invented facts, not misread ones. Two days after the table went in, "There is no barbell at my gym" still reached it as a barbell fact, because "barbell at my gym" really is in the message. The right rule fired on the wrong fact. The table didn't solve that part of my problem. It made it easier to see.
+
+The map doesn't know which seats can't exist. It can flag an overlap no user will ever reach, and you declare a winner anyway.
+
+The lists have to stay short and closed. If you can't write the values down, this doesn't work. And anyone changing a rule has to learn the idea first, which takes longer than reading an if.
+
+## What to take from it
+
+When a fix keeps coming back, the fix is in the wrong place.
+
+<Summary
+  label="Signs I watch for now"
+  points={[
+    "Every fix lands in the same file.",
+    "The file grows faster than the product does.",
+    "You can't say what happens if you move one check above another.",
+    "Someone asks why it did that, and the honest answer is to go and read the code.",
+  ]}
+/>
+
+Today "I don't have a Smith machine" becomes one fact with its words attached, and the table picks what happens next.
+
+Which decision in your agent has been fixed the most times? That's where I'd start. Tell me on LinkedIn or X.

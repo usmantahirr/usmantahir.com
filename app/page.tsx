@@ -4,6 +4,16 @@ import { Timeline } from "@/components/Timeline";
 import { ContactForm } from "@/components/ContactForm";
 import { CollapsibleStory } from "@/components/CollapsibleStory";
 import { Footer } from "@/components/Footer";
+import Link from "next/link";
+import { PERSON } from "@/lib/site";
+import { formatDate, getPosts } from "@/lib/writing";
+
+// For search engines: who this site is about. Posts point their author here.
+const profileJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  mainEntity: PERSON,
+};
 import {
   FidamySpecimen,
   DroobiSpecimen,
@@ -12,15 +22,29 @@ import {
 } from "@/components/Specimens";
 
 export default function Home() {
+  const [latest, ...others] = getPosts().slice(0, 3);
   return (
     <>
       <RevealObserver />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(profileJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
 
       <header className="hero">
         <div className="heroglow" />
         <HeroMedia />
         <div className="herocontent">
           <div className="wrap">
+            {latest && (
+              <Link className="heronew rise r1" href={`/writing/${latest.slug}`}>
+                <b>New</b>
+                <span className="heronewtitle">{latest.title}</span>
+                <span aria-hidden="true">→</span>
+              </Link>
+            )}
             <h1 className="h1 disp rise r1">
               I build and <span className="em">own products end-to-end</span>,
               from the problem to what ships.
@@ -459,28 +483,58 @@ export default function Home() {
 
 
 
-        {/* Working with teams */}
-        <section className="section band" id="teams">
-          <div className="wrap">
-            <div className="sechead reveal">
-              <h2 className="sectitle disp">Working with teams</h2>
-            </div>
-            <div className="approach reveal">
-              <p>
-                Most of my work is shipping. When a product needed a team run, I
-                ran it: ten engineers at Droobi as the only one on site, setting
-                the standards and the delivery cadence while building the web
-                frontend myself; five on the national screening platform in Abu
-                Dhabi, delivered in four months; two freelancers at Mustaa, where
-                I designed the system as CTO. I hire, review and mentor.{" "}
-                <span className="em">
-                  I&rsquo;d rather be measured by what the team shipped than by my
-                  title.
+        {/* Writing: right after the work, so the posts back up the claims */}
+        {latest && (
+          <section className="section band" id="writing">
+            <div className="wrap">
+              <div className="sechead reveal">
+                <h2 className="sectitle disp">Blog</h2>
+              </div>
+              <p className="secintro reveal">
+                How I build products with AI: what I tried, what broke, and the
+                rule that came out of it.
+              </p>
+              <Link className={latest.card ? "postlead withcard" : "postlead"} href={`/writing/${latest.slug}`}>
+                {latest.card && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img className="leadcard" src={latest.card.src} alt={latest.card.alt} width={1600} height={905} loading="lazy" />
+                )}
+                <span className="leadtext">
+                  <span className="leadlabel">Latest</span>
+                  <span className="leadtitle disp">{latest.title}</span>
+                  <span className="postdesc">{latest.description}</span>
+                  <span className="postdate">
+                    <time dateTime={latest.date}>{formatDate(latest.date)}</time>
+                    {" · "}
+                    {latest.minutes} min read
+                  </span>
                 </span>
+              </Link>
+              {others.length > 0 && (
+                <ul className="postlist">
+                  {others.map((post) => (
+                    <li key={post.slug}>
+                      <Link className={post.card ? "postrow withthumb" : "postrow"} href={`/writing/${post.slug}`}>
+                        {post.card && (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img className="rowthumb" src={post.card.src} alt="" width={1600} height={905} loading="lazy" />
+                        )}
+                        <span className="posttitle disp">{post.title}</span>
+                        <span className="postdesc">{post.description}</span>
+                        <span className="postdate">
+                          <time dateTime={post.date}>{formatDate(post.date)}</time>
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <p className="homewritingmore">
+                <Link href="/writing">All posts</Link>
               </p>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* Capabilities */}
         <section className="section" id="skills">
@@ -551,6 +605,29 @@ export default function Home() {
                 exam booked
               </span>
             </p>
+          </div>
+        </section>
+
+        {/* Working with teams */}
+        <section className="section band" id="teams">
+          <div className="wrap">
+            <div className="sechead reveal">
+              <h2 className="sectitle disp">Working with teams</h2>
+            </div>
+            <div className="approach reveal">
+              <p>
+                Most of my work is shipping. When a product needed a team run, I
+                ran it: ten engineers at Droobi as the only one on site, setting
+                the standards and the delivery cadence while building the web
+                frontend myself; five on the national screening platform in Abu
+                Dhabi, delivered in four months; two freelancers at Mustaa, where
+                I designed the system as CTO. I hire, review and mentor.{" "}
+                <span className="em">
+                  I&rsquo;d rather be measured by what the team shipped than by my
+                  title.
+                </span>
+              </p>
+            </div>
           </div>
         </section>
 

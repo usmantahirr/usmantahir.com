@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { formatDate, getPosts } from "@/lib/writing";
-import { FEED_ALTERNATE, FEED_DESCRIPTION, FEED_PATH, OG_IMAGE, SITE_NAME } from "@/lib/site";
+import { formatDate, getPosts, type Post } from "@/lib/writing";
+import {
+  FEED_ALTERNATE,
+  FEED_DESCRIPTION,
+  FEED_PATH,
+  LINKEDIN_URL,
+  OG_IMAGE,
+  PITCH,
+  SITE_NAME,
+  X_URL,
+} from "@/lib/site";
 
-const TITLE = "Writing · Usman Tahir";
+const TITLE = "Blog · Usman Tahir";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -26,39 +35,83 @@ export const metadata: Metadata = {
   },
 };
 
+function Meta({ post }: { post: Post }) {
+  return (
+    <span className="postdate">
+      <time dateTime={post.date}>{formatDate(post.date)}</time>
+      {" · "}
+      {post.minutes} min read
+    </span>
+  );
+}
+
 export default function WritingIndex() {
-  const posts = getPosts();
+  const [latest, ...rest] = getPosts();
 
   return (
     <main className="section writing">
       <div className="wrap">
-        <h1 className="writetitle disp">Writing</h1>
+        <h1 className="writetitle disp">Blog</h1>
         <p className="secintro">
-          Notes on how I build things and what I learned doing it.
+          How I build products with AI: what I tried, what broke, and the rule
+          that came out of it. {PITCH}
+        </p>
+        <p className="follow">
+          <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
+            Follow on LinkedIn
+          </a>
+          {X_URL && (
+            <a href={X_URL} target="_blank" rel="noopener noreferrer">
+              Follow on X
+            </a>
+          )}
+          <a href={FEED_PATH}>RSS feed</a>
+          <Link href="/#contact">Work with me</Link>
         </p>
 
-        {posts.length > 0 ? (
-          <ul className="postlist">
-            {posts.map((post) => (
-              <li key={post.slug}>
-                <Link className="postrow" href={`/writing/${post.slug}`}>
-                  <span className="posttitle disp">{post.title}</span>
-                  <span className="postdesc">{post.description}</span>
-                  <span className="postdate">
-                    <time dateTime={post.date}>{formatDate(post.date)}</time>
-                    {post.draft && " · Draft"}
+        {latest ? (
+          <>
+            <Link className={latest.card ? "postlead withcard" : "postlead"} href={`/writing/${latest.slug}`}>
+              {latest.card && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img className="leadcard" src={latest.card.src} alt={latest.card.alt} width={1600} height={905} />
+              )}
+              <span className="leadtext">
+                <span className="leadlabel">Latest</span>
+                <span className="leadtitle disp">{latest.title}</span>
+                <span className="postdesc">{latest.description}</span>
+                {latest.tags.length > 0 && (
+                  <span className="tags">
+                    {latest.tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
                   </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+                )}
+                <Meta post={latest} />
+              </span>
+            </Link>
+
+            {rest.length > 0 && (
+              <ul className="postlist">
+                {rest.map((post) => (
+                  <li key={post.slug}>
+                    <Link className={post.card ? "postrow withthumb" : "postrow"} href={`/writing/${post.slug}`}>
+                      {post.card && (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img className="rowthumb" src={post.card.src} alt="" width={1600} height={905} loading="lazy" />
+                      )}
+                      <span className="posttitle disp">{post.title}</span>
+                      <span className="postdesc">{post.description}</span>
+                      <Meta post={post} />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </>
         ) : (
           <p className="postempty">Nothing published yet.</p>
         )}
-
-        <a className="feedlink" href={FEED_PATH}>
-          RSS feed
-        </a>
       </div>
     </main>
   );

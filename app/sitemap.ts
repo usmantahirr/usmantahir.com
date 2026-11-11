@@ -7,10 +7,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: SITE_URL },
-    { url: `${SITE_URL}/writing`, lastModified: posts[0]?.date },
+    { url: `${SITE_URL}/writing`, lastModified: posts.map((p) => p.updated).sort().at(-1) },
     ...posts.map((post) => ({
       url: `${SITE_URL}/writing/${post.slug}`,
-      lastModified: post.date,
+      lastModified: post.updated,
     })),
   ];
 }
