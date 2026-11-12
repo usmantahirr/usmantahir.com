@@ -9,6 +9,7 @@ import {
   OG_IMAGE,
   PITCH,
   SITE_NAME,
+  X_HANDLE,
   X_URL,
 } from "@/lib/site";
 
@@ -29,6 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: X_HANDLE,
+    creator: X_HANDLE,
     title: TITLE,
     description: FEED_DESCRIPTION,
     images: [OG_IMAGE.url],

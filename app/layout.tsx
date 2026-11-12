@@ -3,7 +3,8 @@ import { Bricolage_Grotesque, Hanken_Grotesk, JetBrains_Mono } from "next/font/g
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Nav } from "@/components/Nav";
-import { FEED_ALTERNATE, OG_IMAGE, SITE_URL } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
+import { FEED_ALTERNATE, OG_IMAGE, SITE_URL, X_HANDLE } from "@/lib/site";
 
 const display = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -59,6 +60,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: X_HANDLE,
+    creator: X_HANDLE,
     title: "Usman Tahir · Senior Product Engineer",
     description: DESCRIPTION,
     images: [OG_IMAGE.url],
@@ -85,6 +88,8 @@ export default function RootLayout({
           <Nav />
           {children}
         </ThemeProvider>
+        {/* Cookieless page views (Vercel Web Analytics); no consent banner needed. */}
+        <Analytics />
       </body>
     </html>
   );

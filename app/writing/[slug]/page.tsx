@@ -14,6 +14,7 @@ import {
   PITCH,
   SITE_NAME,
   SITE_URL,
+  X_HANDLE,
   X_URL,
 } from "@/lib/site";
 
@@ -54,6 +55,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
+      site: X_HANDLE,
+      creator: X_HANDLE,
       title,
       description: post.description,
     },

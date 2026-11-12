@@ -18,6 +18,8 @@ This is a placeholder, not a post. It gives the first real post something to cop
 title: "The post title"
 date: 2026-10-30
 description: "One or two sentences. Shown on the index, in the feed and on share cards."
+card: "/writing/the-post/scenes/picture.webp"
+cardAlt: "What the picture shows, in words."
 ---
 ```
 
@@ -27,6 +29,10 @@ description: "One or two sentences. Shown on the index, in the feed and on share
 | `date`        | Yes      | `YYYY-MM-DD`. Sets the order on the index.    |
 | `description` | Yes      | Used wherever the post is summarized.         |
 | `draft`       | No       | `true` keeps the post on the dev server only. |
+| `card`        | No       | Picture for the blog index and the share card. |
+| `cardAlt`     | With `card` | What the picture shows, in words.          |
+
+The share card (what LinkedIn, X and chats show when the link is posted) puts the `card` picture beside the title. Its renderer can't read webp, so save a `.jpg` copy next to the card picture with the same name. Without one, the share card is the title on its own.
 
 The build fails and names the file if a required field is missing, so a broken post can't go out by accident.
 

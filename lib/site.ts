@@ -5,6 +5,8 @@ export const LINKEDIN_URL = "https://www.linkedin.com/in/usmantahirr/";
 export const GITHUB_URL = "https://github.com/usmantahirr";
 /** His personal X profile. Until it's set, no X follow link shows. */
 export const X_URL: string | null = "https://x.com/usman_tahirr";
+/** Shown as the author on X link cards. */
+export const X_HANDLE = "@usman_tahirr";
 
 /** Every profile that is him, so search engines join them into one person. */
 export const SAME_AS = [LINKEDIN_URL, X_URL, GITHUB_URL].filter(
