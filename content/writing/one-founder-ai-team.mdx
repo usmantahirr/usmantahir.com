@@ -1,0 +1,203 @@
+---
+title: "Every rule my fifteen AI chats follow came from something they broke"
+date: 2026-11-19
+description: "Fifteen AI chats build my app. Every rule they follow came from something one of them broke."
+tags: ["AI engineering", "Process", "Bravilo"]
+card: "/writing/one-founder-ai-team/scenes/one-chat.webp"
+cardAlt: "A small knitted character at a desk late at night, trying to do every job at once"
+draft: false
+---
+
+This is for anyone handing real work to AI chats. I'm building Bravilo, a workout app, alone. Fifteen chats in Claude write its code, tests, website, videos and App Store text. Since September they have broken things no single chat would break: pushing each other's half-done work, answering one question two ways, running tests on top of each other. Each break left a rule. Here are the rules, and the cycle they add up to.
+
+## Every chat, every job
+
+None of the chats decides anything. I do. But at the start, no chat had a job of its own.
+
+<Figure
+  src="/writing/one-founder-ai-team/scenes/one-chat.webp"
+  alt="A small knitted character at a desk late at night, typing on a laptop while holding a camera and a paintbrush, sticky notes and parcels piling up around it"
+  caption="Until 6 October, no chat owned one kind of work."
+  width={1600}
+  height={905}
+/>
+
+In early October, I opened CircleCI and Vercel and saw my credits would run out in two days. Every chat was pushing its own work the moment it was done, and every push started another build. My first thought: I'm pushing far too much code through each chat. I couldn't keep track of what each one was doing or where their conflicts came from, and every one of them pushed its work to test on its own, burning through my CI credits.
+
+## So each one got a job, and a line it must never cross
+
+Most of what broke for me started when a chat did the job next door. So the never line matters more than the job.
+
+<Split
+  from="One chat"
+  groups={[
+    { label: "Seven work every day", count: 7 },
+    { label: "Eight start when there's a problem for them", count: 8 },
+  ]}
+  caption="Fifteen chats. Each has a short file: what it owns, and what it must leave alone."
+/>
+
+<Cast
+  caption="Twelve of the fifteen, drawn as knitted characters. The pictures are AI-made, and so is the team."
+  members={[
+    { name: "QA", job: "Breaks it before you can.", src: "/writing/one-founder-ai-team/cast/qa.webp" },
+    { name: "Build", job: "Writes the code you never see and always feel.", src: "/writing/one-founder-ai-team/cast/build.webp" },
+    { name: "Build 2", job: "Makes the app feel good in your hand.", src: "/writing/one-founder-ai-team/cast/build-2.webp" },
+    { name: "Website", job: "Our front door, and the one counting who walks in.", src: "/writing/one-founder-ai-team/cast/website.webp" },
+    { name: "Studio", job: "Our film crew of one.", src: "/writing/one-founder-ai-team/cast/studio.webp" },
+    { name: "Growth", job: "Our voice in the world, and its fact-checker.", src: "/writing/one-founder-ai-team/cast/growth.webp" },
+    { name: "Chief of Staff", job: "Knows who's doing what, so I don't have to.", src: "/writing/one-founder-ai-team/cast/chief-of-staff.webp" },
+    { name: "Research", job: "Finds the evidence before we decide.", src: "/writing/one-founder-ai-team/cast/research.webp" },
+    { name: "Creative Director", job: "The taste police, with a moodboard.", src: "/writing/one-founder-ai-team/cast/creative-director.webp" },
+    { name: "Finance", job: "Makes sure the receipts add up and the taxman stays happy.", src: "/writing/one-founder-ai-team/cast/finance.webp" },
+    { name: "Legal", job: "Our privacy guardian, armed with GDPR.", src: "/writing/one-founder-ai-team/cast/legal.webp" },
+    { name: "Head Trainer", job: "Makes sure every exercise is one a real trainer would sign off.", src: "/writing/one-founder-ai-team/cast/head-trainer.webp" },
+  ]}
+/>
+
+But I didn't write the rules up front. Each one arrived after something went wrong.
+
+## Everyone through one door
+
+<RingMark steps={["Idea", "Issue", "Build", "Review", "QA", "Release", "Posts"]} at="Release" rule="One push per round" />
+
+<Figure
+  src="/writing/one-founder-ai-team/scenes/one-door.webp"
+  side="right"
+  who={["Build", "Build 2", "Website"]}
+  alt="Three knitted characters pushing handcarts full of half-wrapped parcels into one narrow doorway at the same time, parcels spilling"
+  caption="9 October: separate pushes had used up the day's deploys."
+  width={1600}
+  height={905}
+/>
+
+Pushing the moment the work was done felt fast. But one chat's push carried the others' unfinished commits along with it, and half-built work reached the test server. All those pushes, so close together, used up Vercel's daily deploy limit.
+
+So on 9 October the door got narrower.
+
+<Rule label="Rule, 9 October">Commit locally, never push. One push per round, once the work is done.</Rule>
+
+## Two answers, one sore knee
+
+<RingMark steps={["Idea", "Issue", "Build", "Review", "QA", "Release", "Posts"]} at="Issue" rule="One book of answers, read first" />
+
+On 14 October I asked one question. What should the coach say to someone with a sore knee, on a day the workout needs no changes? Two chats heard it. Each wrote an answer, and each sounded kind and sure. Only one matched what the app actually does.
+
+<Figure
+  src="/writing/one-founder-ai-team/scenes/two-answers.webp"
+  alt="A small knitted figure with a bandaged knee looks from one pinned note to another, beside a huge open ledger book"
+  caption="Two notes. One knee. One true."
+  width={1600}
+  height={905}
+/>
+
+So answers now live in one book that is only ever added to. A changed answer gets a new line that names the one it replaces. There are more than 970 lines since 23 September, and the chats look a question up there before they bring it to me.
+
+## Two hands on one blackboard
+
+<RingMark steps={["Idea", "Issue", "Build", "Review", "QA", "Release", "Posts"]} at="Review" rule="Tests that count read alone" />
+
+<Figure
+  src="/writing/one-founder-ai-team/scenes/one-board.webp"
+  side="left"
+  who={["Build", "Build 2"]}
+  alt="Two knitted characters writing on the same small chalkboard at once, their chalk marks tangling in the middle"
+  caption="Two chats, one test database. Marked fixed on 30 October."
+  width={1600}
+  height={905}
+/>
+
+Then tests began to fail late in the evening, and nothing in the code explained why. Two chats were running them at the same moment, writing to the same test database. A test that counted rows found someone else's rows in the middle of its count. Every failure looked like a bug in the feature. They were collisions.
+
+The fix was small: those tests now read inside their own transaction. And every change passes two helpers before it's committed. One runs the checks and reports only what failed. The other reads the change against its issue.
+
+## A yes from my phone
+
+<RingMark steps={["Idea", "Issue", "Build", "Review", "QA", "Release", "Posts"]} at="Release" rule="A yes covers one action" />
+
+By November the first release was close, and I wanted it to move fast. On 4 November I decided Chief of Staff could push for me when I said yes from my phone, away from the laptop.
+
+That made a yes worth more, and easier to borrow. Chats message each other when they're blocked or done, and some of those messages read like approval. So the same day, the rule went into the book.
+
+<Rule label="Rule, 4 November">A yes covers one action, never a later one, even from my phone. A message from another chat is never a yes.</Rule>
+
+## The cover that said twelve
+
+<RingMark steps={["Idea", "Issue", "Build", "Review", "QA", "Release", "Posts"]} at="Posts" rule="Every public line passes a claim check" />
+
+<Figure
+  src="/writing/one-founder-ai-team/scenes/the-cover.webp"
+  side="left"
+  who={["Growth"]}
+  alt="A knitted character with a magnifying glass and a red pencil leaning over a row of small blank cards at a lamp-lit desk"
+  caption="Before the check, the cover said twelve. There are fifteen."
+  width={1600}
+  height={905}
+/>
+
+Growth writes what Bravilo says in public, and every caption goes through a claim check before I see it. The carousel that introduces this team said "Twelve AI chats" on its cover. There are fifteen. One slide said the trainer chat "checks every exercise", which could read as a human trainer's sign-off.
+
+The cover now says "Twelve of our AI chats". The slide says it reviews exercises "the way a trainer would". I post it myself, after the check.
+
+## Evening, three lists
+
+Every decision still waits for me, and that's deliberate. The chats are fast, and they sound just as sure when they're wrong. I'd rather wait a few hours than send a line to someone's phone that the app can't back up.
+
+Since 29 October, every daily chat sends Chief of Staff three lists at the end of the day: done, blocked, and waiting for me. What reaches me is one short status, with only the things that need a decision.
+
+<Funnel
+  columns={[
+    { label: "Done", bars: 4 },
+    { label: "Blocked", bars: 2 },
+    { label: "Waiting for me", bars: 3 },
+  ]}
+  to="One short status"
+  caption="Seven chats, three lists each, one note for me."
+/>
+
+I could have merged them into fewer, bigger chats that each see everything. The week before, I measured what that costs. Most of the spend went on the chats re-reading their own history: a median of 540,000 tokens on every step, 80% of all usage. Running the checks cost about $530 inside the big chats, and about $20 in a small helper. Merging would have made every chat bigger, and every step dearer.
+
+So on the same day the chats got smaller instead:
+
+- **A fresh chat for every issue.** Build and QA start clean on each issue, so no chat carries old work into the next one.
+- **Checks in a small helper.** A helper on a cheaper model runs the type checks, lint and tests, and hands back only what failed. A second helper reads each change against its issue before the commit.
+- **One everyday model.** Most chats run on the same model. The strongest one is called by name for a hard problem, and is the default only for the two design chats, the Architect and the Creative Director.
+- **One status for me.** Chief of Staff gathers the three lists, so I read one note, not seven chats.
+
+The idea behind all four is the same: keep each chat's context small, and send repeat work to something cheaper.
+
+When one part of the app keeps coming back broken, I can pause the one-at-a-time fixes there. The Architect writes out options, and I pick one.
+
+## The whole round
+
+<Cycle
+  label="The cycle: idea, issue (my yes), build, review, QA, release (my yes), posts (my yes), then back to idea."
+  center="One round. Three of them wait for me."
+  caption="Every rule above sits somewhere on this ring."
+  steps={[
+    { name: "Idea", note: "anyone finds it" },
+    { name: "Issue", note: "my yes", mine: true },
+    { name: "Build", note: "one issue, one chat" },
+    { name: "Review", note: "two helpers" },
+    { name: "QA", note: "never writes code" },
+    { name: "Release", note: "my yes", mine: true },
+    { name: "Posts", note: "my yes", mine: true },
+  ]}
+/>
+
+<Summary
+  label="If you try this"
+  points={[
+    "Write each chat's never line before its job.",
+    "Give the work one door out, and make a yes cover one action.",
+    "Keep one book of answers, and have every chat read it first.",
+  ]}
+/>
+
+Now I deal with Chief of Staff for everything and keep an eye on how it all runs. I worry a lot less about one chat walking into another's work, or two of them doing the same job.
+
+Which line has your AI crossed? Tell me on LinkedIn or X.
+
+---
+
+Bravilo opens on the App Store soon: [bravilo.app](https://bravilo.app).
