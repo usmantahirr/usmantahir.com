@@ -2789,8 +2789,7 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px 22px;
-  padding: 18px 0;
-  border-top: 1px solid var(--line2);
+  padding: 0 0 18px;
   border-bottom: 1px solid var(--line);
   font-family: var(--font-mono);
   font-size: 12px;
