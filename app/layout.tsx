@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Young_Serif, Source_Sans_3, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Nav } from "@/components/Nav";
 import { Analytics } from "@vercel/analytics/next";
 import { FEED_ALTERNATE, OG_IMAGE, SITE_URL, X_HANDLE } from "@/lib/site";
 
-const display = Bricolage_Grotesque({
+const display = Young_Serif({
   subsets: ["latin"],
-  weight: "variable",
-  axes: ["opsz"],
+  weight: "400",
   variable: "--font-display",
   display: "swap",
 });
 
-const hanken = Hanken_Grotesk({
+const hanken = Source_Sans_3({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  // variable: any weight from 200 to 900, so body text can sit at 450
+  weight: "variable",
   variable: "--font-hanken",
   display: "swap",
 });
@@ -24,7 +24,7 @@ const hanken = Hanken_Grotesk({
 const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
-  variable: "--font-mono",
+  variable: "--font-code",
   display: "swap",
 });
 
@@ -84,7 +84,6 @@ export default function RootLayout({
       <body className="site" suppressHydrationWarning>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
         <ThemeProvider>
-          <div className="grain" />
           <Nav />
           {children}
         </ThemeProvider>

@@ -35,7 +35,7 @@ export function Nav() {
             href="/writing"
             aria-current={inWriting ? "page" : undefined}
           >
-            Blog
+            Writing
           </Link>
           <Link className="navlink" href="/#contact">
             Contact

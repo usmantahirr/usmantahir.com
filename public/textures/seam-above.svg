@@ -1,0 +1,626 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="72" viewBox="0 0 480 72"><defs>
+<linearGradient id="t1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e39577"/><stop offset=".38" stop-color="#b0533a"/><stop offset="1" stop-color="#6f2d1d"/></linearGradient>
+<pattern id="twt1" width="2.6" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-38)"><rect width=".9" height="8" fill="#6f2d1d" fill-opacity=".5"/><rect x="1.4" width=".5" height="8" fill="#e39577" fill-opacity=".35"/></pattern>
+<linearGradient id="t2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fa47f"/><stop offset=".38" stop-color="#566c4a"/><stop offset="1" stop-color="#2f3f27"/></linearGradient>
+<pattern id="twt2" width="2.6" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-38)"><rect width=".9" height="8" fill="#2f3f27" fill-opacity=".5"/><rect x="1.4" width=".5" height="8" fill="#8fa47f" fill-opacity=".35"/></pattern>
+<linearGradient id="cast" x1="0" y1="0" x2="0" y2="1"><stop offset="0.4931" stop-color="#2c1f12" stop-opacity="0"/><stop offset="0.5000" stop-color="#2c1f12" stop-opacity="0.1"/><stop offset="0.5208" stop-color="#2c1f12" stop-opacity="0.07"/><stop offset="0.6250" stop-color="#2c1f12" stop-opacity="0"/></linearGradient>
+<filter id="b" x="-20%" y="-150%" width="140%" height="400%"><feGaussianBlur stdDeviation="0.9"/></filter>
+</defs>
+<rect width="480" height="72" fill="url(#cast)"/>
+<rect y="34.8" width="480" height=".9" fill="#ffffff" fill-opacity="0.5"/>
+<path d="M274.1 37.2C282.7 40.1 294.1 48.5 302.8 43.4" fill="none" stroke="#fffaf0" stroke-opacity="0.23" stroke-width="0.46" stroke-linecap="round"/>
+<path d="M415.1 36.7C424.5 36.4 437.1 28.3 446.5 31.3" fill="none" stroke="#fffaf0" stroke-opacity="0.40" stroke-width="0.50" stroke-linecap="round"/>
+<path d="M5.8 34.6C10.4 37.8 16.5 36.3 21.0 40.4" fill="none" stroke="#fffaf0" stroke-opacity="0.48" stroke-width="0.35" stroke-linecap="round"/>
+<path d="M271.7 34.1C274.1 30.6 277.3 35.9 279.7 39.3" fill="none" stroke="#fffaf0" stroke-opacity="0.54" stroke-width="0.61" stroke-linecap="round"/>
+<path d="M127.3 38.3C133.9 34.8 142.7 46.1 149.3 40.8" fill="none" stroke="#fffaf0" stroke-opacity="0.45" stroke-width="0.64" stroke-linecap="round"/>
+<path d="M393.2 35.0C398.5 30.7 405.4 25.1 410.6 30.3" fill="none" stroke="#fffaf0" stroke-opacity="0.32" stroke-width="0.51" stroke-linecap="round"/>
+<path d="M1.5 36.9C6.5 40.7 13.2 34.0 18.3 34.2" fill="none" stroke="#fffaf0" stroke-opacity="0.32" stroke-width="0.47" stroke-linecap="round"/>
+<path d="M310.1 33.8C320.1 36.8 333.4 31.2 343.4 27.1" fill="none" stroke="#fffaf0" stroke-opacity="0.23" stroke-width="0.58" stroke-linecap="round"/>
+<path d="M161.1 36.4C163.6 32.6 166.9 35.5 169.4 30.0" fill="none" stroke="#fffaf0" stroke-opacity="0.28" stroke-width="0.56" stroke-linecap="round"/>
+<path d="M409.0 38.2C414.1 38.5 420.9 39.5 426.0 36.2" fill="none" stroke="#fffaf0" stroke-opacity="0.26" stroke-width="0.56" stroke-linecap="round"/>
+<path d="M350.8 37.8C353.5 32.9 357.0 42.1 359.7 44.0" fill="none" stroke="#fffaf0" stroke-opacity="0.42" stroke-width="0.62" stroke-linecap="round"/>
+<path d="M149.6 38.1C156.2 35.9 165.1 31.6 171.8 35.5" fill="none" stroke="#fffaf0" stroke-opacity="0.25" stroke-width="0.35" stroke-linecap="round"/>
+<path d="M303.2 38.5C306.9 44.3 311.8 32.6 315.4 32.2" fill="none" stroke="#fffaf0" stroke-opacity="0.35" stroke-width="0.38" stroke-linecap="round"/>
+<path d="M261.3 37.6C267.3 32.3 275.2 41.5 281.2 36.5" fill="none" stroke="#fffaf0" stroke-opacity="0.23" stroke-width="0.47" stroke-linecap="round"/>
+<path d="M368.9 34.2C377.0 35.7 387.8 43.9 395.9 40.5" fill="none" stroke="#fffaf0" stroke-opacity="0.26" stroke-width="0.45" stroke-linecap="round"/>
+<path d="M65.7 37.7C70.4 43.7 76.6 41.3 81.3 37.1" fill="none" stroke="#fffaf0" stroke-opacity="0.54" stroke-width="0.46" stroke-linecap="round"/>
+<ellipse transform="translate(-0.01 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(-0.01 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(-0.01 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(-0.01 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(-0.01 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(-0.01 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(-0.01 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(-0.01 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(11.99 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(11.99 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(11.99 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(11.99 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(11.99 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(11.99 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(11.99 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(11.99 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(24.28 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(24.28 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(24.28 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(24.28 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(24.28 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(24.28 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(24.28 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(24.28 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(36.28 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(36.28 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(36.28 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(36.28 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(36.28 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(36.28 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(36.28 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(36.28 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(47.97 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(47.97 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(47.97 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(47.97 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(47.97 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(47.97 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(47.97 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(47.97 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(59.97 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(59.97 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(59.97 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(59.97 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(59.97 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(59.97 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(59.97 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(59.97 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(71.75 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(71.75 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(71.75 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(71.75 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(71.75 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(71.75 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(71.75 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(71.75 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(83.75 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(83.75 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(83.75 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(83.75 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(83.75 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(83.75 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(83.75 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(83.75 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(95.88 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(95.88 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(95.88 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(95.88 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(95.88 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(95.88 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(95.88 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(95.88 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(107.88 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(107.88 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(107.88 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(107.88 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(107.88 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(107.88 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(107.88 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(107.88 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(119.58 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(119.58 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(119.58 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(119.58 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(119.58 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(119.58 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(119.58 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(119.58 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(131.58 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(131.58 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(131.58 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(131.58 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(131.58 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(131.58 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(131.58 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(131.58 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(143.85 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(143.85 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(143.85 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(143.85 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(143.85 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(143.85 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(143.85 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(143.85 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(155.85 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(155.85 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(155.85 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(155.85 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(155.85 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(155.85 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(155.85 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(155.85 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(168.59 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(168.59 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(168.59 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(168.59 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(168.59 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(168.59 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(168.59 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(168.59 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(180.59 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(180.59 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(180.59 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(180.59 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(180.59 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(180.59 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(180.59 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(180.59 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(192.55 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(192.55 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(192.55 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(192.55 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(192.55 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(192.55 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(192.55 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(192.55 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(204.55 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(204.55 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(204.55 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(204.55 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(204.55 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(204.55 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(204.55 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(204.55 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(216.15 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(216.15 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(216.15 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(216.15 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(216.15 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(216.15 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(216.15 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(216.15 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(228.15 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(228.15 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(228.15 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(228.15 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(228.15 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(228.15 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(228.15 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(228.15 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(240.00 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(240.00 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(240.00 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(240.00 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(240.00 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(240.00 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(240.00 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(240.00 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(252.00 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(252.00 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(252.00 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(252.00 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(252.00 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(252.00 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(252.00 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(252.00 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(263.81 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(263.81 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(263.81 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(263.81 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(263.81 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(263.81 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(263.81 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(263.81 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(275.81 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(275.81 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(275.81 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(275.81 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(275.81 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(275.81 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(275.81 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(275.81 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(287.51 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(287.51 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(287.51 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(287.51 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(287.51 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(287.51 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(287.51 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(287.51 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(299.51 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(299.51 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(299.51 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(299.51 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(299.51 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(299.51 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(299.51 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(299.51 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(311.73 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(311.73 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(311.73 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(311.73 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(311.73 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(311.73 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(311.73 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(311.73 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(323.73 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(323.73 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(323.73 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(323.73 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(323.73 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(323.73 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(323.73 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(323.73 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(336.34 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(336.34 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(336.34 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(336.34 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(336.34 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(336.34 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(336.34 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(336.34 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(348.34 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(348.34 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(348.34 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(348.34 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(348.34 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(348.34 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(348.34 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(348.34 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(360.44 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(360.44 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(360.44 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(360.44 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(360.44 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(360.44 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(360.44 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(360.44 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(372.44 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(372.44 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(372.44 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(372.44 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(372.44 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(372.44 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(372.44 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(372.44 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(383.83 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(383.83 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(383.83 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(383.83 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(383.83 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(383.83 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(383.83 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(383.83 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(395.83 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(395.83 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(395.83 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(395.83 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(395.83 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(395.83 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(395.83 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(395.83 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(408.34 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(408.34 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(408.34 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(408.34 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(408.34 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(408.34 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(408.34 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(408.34 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(420.34 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(420.34 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(420.34 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(420.34 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(420.34 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(420.34 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(420.34 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(420.34 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(432.33 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(432.33 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(432.33 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(432.33 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(432.33 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(432.33 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(432.33 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(432.33 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(444.33 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(444.33 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(444.33 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(444.33 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(444.33 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(444.33 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(444.33 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(444.33 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(456.23 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(456.23 44.50) rotate(-35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(456.23 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(456.23 44.50) rotate(-35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(456.23 44.50) rotate(-35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(456.23 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(456.23 44.50) rotate(-35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(456.23 44.50) rotate(-35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(468.23 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(468.23 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(468.23 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(468.23 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(468.23 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(468.23 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(468.23 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(468.23 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(-11.77 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(-11.77 27.50) rotate(35.31)" cx="-1.40" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(-11.77 27.50) rotate(35.31)" cx="30.81" cy="0" rx="1.25" ry="1.05" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(-11.77 27.50) rotate(35.31)" cx="30.81" cy="0" rx="0.62" ry="0.55" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(-11.77 27.50) rotate(35.31)" x="0" y="-0.25" width="29.41" height="2.5" rx="1.25" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(-11.77 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#t1)"/>
+<rect transform="translate(-11.77 27.50) rotate(35.31)" x="0" y="-1.25" width="29.41" height="2.5" rx="1.25" fill="url(#twt1)"/>
+<rect transform="translate(-11.77 27.50) rotate(35.31)" x="2.20" y="-0.80" width="25.01" height="0.43" rx="0.20" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(2.00 14.74) rotate(3.88)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(2.00 14.74) rotate(3.88)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(2.00 14.74) rotate(3.88)" cx="9.74" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(2.00 14.74) rotate(3.88)" cx="9.74" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(2.00 14.74) rotate(3.88)" x="0" y="0.15" width="8.34" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(2.00 14.74) rotate(3.88)" x="0" y="-0.85" width="8.34" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(2.00 14.74) rotate(3.88)" x="0" y="-0.85" width="8.34" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(2.00 14.74) rotate(3.88)" x="1.25" y="-0.54" width="5.84" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(16.84 14.50) rotate(-0.98)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(16.84 14.50) rotate(-0.98)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(16.84 14.50) rotate(-0.98)" cx="9.12" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(16.84 14.50) rotate(-0.98)" cx="9.12" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(16.84 14.50) rotate(-0.98)" x="0" y="0.15" width="7.72" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(16.84 14.50) rotate(-0.98)" x="0" y="-0.85" width="7.72" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(16.84 14.50) rotate(-0.98)" x="0" y="-0.85" width="7.72" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(16.84 14.50) rotate(-0.98)" x="1.16" y="-0.54" width="5.41" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(30.97 14.78) rotate(-0.95)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(30.97 14.78) rotate(-0.95)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(30.97 14.78) rotate(-0.95)" cx="8.96" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(30.97 14.78) rotate(-0.95)" cx="8.96" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(30.97 14.78) rotate(-0.95)" x="0" y="0.15" width="7.56" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(30.97 14.78) rotate(-0.95)" x="0" y="-0.85" width="7.56" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(30.97 14.78) rotate(-0.95)" x="0" y="-0.85" width="7.56" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(30.97 14.78) rotate(-0.95)" x="1.13" y="-0.54" width="5.29" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(44.49 14.62) rotate(3.11)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(44.49 14.62) rotate(3.11)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(44.49 14.62) rotate(3.11)" cx="9.95" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(44.49 14.62) rotate(3.11)" cx="9.95" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(44.49 14.62) rotate(3.11)" x="0" y="0.15" width="8.55" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(44.49 14.62) rotate(3.11)" x="0" y="-0.85" width="8.55" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(44.49 14.62) rotate(3.11)" x="0" y="-0.85" width="8.55" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(44.49 14.62) rotate(3.11)" x="1.28" y="-0.54" width="5.98" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(59.41 14.87) rotate(-4.90)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(59.41 14.87) rotate(-4.90)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(59.41 14.87) rotate(-4.90)" cx="9.01" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(59.41 14.87) rotate(-4.90)" cx="9.01" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(59.41 14.87) rotate(-4.90)" x="0" y="0.15" width="7.61" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(59.41 14.87) rotate(-4.90)" x="0" y="-0.85" width="7.61" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(59.41 14.87) rotate(-4.90)" x="0" y="-0.85" width="7.61" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(59.41 14.87) rotate(-4.90)" x="1.14" y="-0.54" width="5.33" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(73.88 15.11) rotate(-3.91)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(73.88 15.11) rotate(-3.91)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(73.88 15.11) rotate(-3.91)" cx="9.71" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(73.88 15.11) rotate(-3.91)" cx="9.71" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(73.88 15.11) rotate(-3.91)" x="0" y="0.15" width="8.31" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(73.88 15.11) rotate(-3.91)" x="0" y="-0.85" width="8.31" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(73.88 15.11) rotate(-3.91)" x="0" y="-0.85" width="8.31" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(73.88 15.11) rotate(-3.91)" x="1.25" y="-0.54" width="5.82" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(88.33 15.05) rotate(-1.83)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(88.33 15.05) rotate(-1.83)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(88.33 15.05) rotate(-1.83)" cx="8.42" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(88.33 15.05) rotate(-1.83)" cx="8.42" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(88.33 15.05) rotate(-1.83)" x="0" y="0.15" width="7.02" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(88.33 15.05) rotate(-1.83)" x="0" y="-0.85" width="7.02" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(88.33 15.05) rotate(-1.83)" x="0" y="-0.85" width="7.02" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(88.33 15.05) rotate(-1.83)" x="1.05" y="-0.54" width="4.92" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(101.44 15.08) rotate(4.89)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(101.44 15.08) rotate(4.89)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(101.44 15.08) rotate(4.89)" cx="8.92" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(101.44 15.08) rotate(4.89)" cx="8.92" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(101.44 15.08) rotate(4.89)" x="0" y="0.15" width="7.52" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(101.44 15.08) rotate(4.89)" x="0" y="-0.85" width="7.52" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(101.44 15.08) rotate(4.89)" x="0" y="-0.85" width="7.52" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(101.44 15.08) rotate(4.89)" x="1.13" y="-0.54" width="5.27" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(115.28 15.32) rotate(-0.82)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(115.28 15.32) rotate(-0.82)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(115.28 15.32) rotate(-0.82)" cx="9.32" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(115.28 15.32) rotate(-0.82)" cx="9.32" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(115.28 15.32) rotate(-0.82)" x="0" y="0.15" width="7.92" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(115.28 15.32) rotate(-0.82)" x="0" y="-0.85" width="7.92" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(115.28 15.32) rotate(-0.82)" x="0" y="-0.85" width="7.92" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(115.28 15.32) rotate(-0.82)" x="1.19" y="-0.54" width="5.55" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(129.83 15.31) rotate(1.38)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(129.83 15.31) rotate(1.38)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(129.83 15.31) rotate(1.38)" cx="9.69" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(129.83 15.31) rotate(1.38)" cx="9.69" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(129.83 15.31) rotate(1.38)" x="0" y="0.15" width="8.29" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(129.83 15.31) rotate(1.38)" x="0" y="-0.85" width="8.29" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(129.83 15.31) rotate(1.38)" x="0" y="-0.85" width="8.29" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(129.83 15.31) rotate(1.38)" x="1.24" y="-0.54" width="5.80" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(144.71 14.87) rotate(-3.73)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(144.71 14.87) rotate(-3.73)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(144.71 14.87) rotate(-3.73)" cx="9.11" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(144.71 14.87) rotate(-3.73)" cx="9.11" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(144.71 14.87) rotate(-3.73)" x="0" y="0.15" width="7.71" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(144.71 14.87) rotate(-3.73)" x="0" y="-0.85" width="7.71" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(144.71 14.87) rotate(-3.73)" x="0" y="-0.85" width="7.71" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(144.71 14.87) rotate(-3.73)" x="1.16" y="-0.54" width="5.40" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(158.68 15.10) rotate(0.60)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(158.68 15.10) rotate(0.60)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(158.68 15.10) rotate(0.60)" cx="9.87" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(158.68 15.10) rotate(0.60)" cx="9.87" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(158.68 15.10) rotate(0.60)" x="0" y="0.15" width="8.47" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(158.68 15.10) rotate(0.60)" x="0" y="-0.85" width="8.47" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(158.68 15.10) rotate(0.60)" x="0" y="-0.85" width="8.47" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(158.68 15.10) rotate(0.60)" x="1.27" y="-0.54" width="5.93" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(173.81 15.46) rotate(4.87)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(173.81 15.46) rotate(4.87)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(173.81 15.46) rotate(4.87)" cx="9.12" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(173.81 15.46) rotate(4.87)" cx="9.12" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(173.81 15.46) rotate(4.87)" x="0" y="0.15" width="7.72" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(173.81 15.46) rotate(4.87)" x="0" y="-0.85" width="7.72" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(173.81 15.46) rotate(4.87)" x="0" y="-0.85" width="7.72" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(173.81 15.46) rotate(4.87)" x="1.16" y="-0.54" width="5.41" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(188.19 15.11) rotate(-1.37)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(188.19 15.11) rotate(-1.37)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(188.19 15.11) rotate(-1.37)" cx="10.14" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(188.19 15.11) rotate(-1.37)" cx="10.14" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(188.19 15.11) rotate(-1.37)" x="0" y="0.15" width="8.74" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(188.19 15.11) rotate(-1.37)" x="0" y="-0.85" width="8.74" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(188.19 15.11) rotate(-1.37)" x="0" y="-0.85" width="8.74" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(188.19 15.11) rotate(-1.37)" x="1.31" y="-0.54" width="6.12" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(203.29 15.39) rotate(-4.47)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(203.29 15.39) rotate(-4.47)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(203.29 15.39) rotate(-4.47)" cx="10.37" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(203.29 15.39) rotate(-4.47)" cx="10.37" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(203.29 15.39) rotate(-4.47)" x="0" y="0.15" width="8.97" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(203.29 15.39) rotate(-4.47)" x="0" y="-0.85" width="8.97" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(203.29 15.39) rotate(-4.47)" x="0" y="-0.85" width="8.97" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(203.29 15.39) rotate(-4.47)" x="1.35" y="-0.54" width="6.28" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(219.15 14.61) rotate(0.66)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(219.15 14.61) rotate(0.66)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(219.15 14.61) rotate(0.66)" cx="9.43" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(219.15 14.61) rotate(0.66)" cx="9.43" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(219.15 14.61) rotate(0.66)" x="0" y="0.15" width="8.03" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(219.15 14.61) rotate(0.66)" x="0" y="-0.85" width="8.03" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(219.15 14.61) rotate(0.66)" x="0" y="-0.85" width="8.03" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(219.15 14.61) rotate(0.66)" x="1.20" y="-0.54" width="5.62" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(233.24 15.12) rotate(-3.93)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(233.24 15.12) rotate(-3.93)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(233.24 15.12) rotate(-3.93)" cx="8.75" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(233.24 15.12) rotate(-3.93)" cx="8.75" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(233.24 15.12) rotate(-3.93)" x="0" y="0.15" width="7.35" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(233.24 15.12) rotate(-3.93)" x="0" y="-0.85" width="7.35" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(233.24 15.12) rotate(-3.93)" x="0" y="-0.85" width="7.35" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(233.24 15.12) rotate(-3.93)" x="1.10" y="-0.54" width="5.14" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(247.23 15.13) rotate(3.53)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(247.23 15.13) rotate(3.53)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(247.23 15.13) rotate(3.53)" cx="10.29" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(247.23 15.13) rotate(3.53)" cx="10.29" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(247.23 15.13) rotate(3.53)" x="0" y="0.15" width="8.89" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(247.23 15.13) rotate(3.53)" x="0" y="-0.85" width="8.89" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(247.23 15.13) rotate(3.53)" x="0" y="-0.85" width="8.89" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(247.23 15.13) rotate(3.53)" x="1.33" y="-0.54" width="6.22" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(262.06 14.88) rotate(-0.65)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(262.06 14.88) rotate(-0.65)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(262.06 14.88) rotate(-0.65)" cx="9.78" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(262.06 14.88) rotate(-0.65)" cx="9.78" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(262.06 14.88) rotate(-0.65)" x="0" y="0.15" width="8.38" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(262.06 14.88) rotate(-0.65)" x="0" y="-0.85" width="8.38" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(262.06 14.88) rotate(-0.65)" x="0" y="-0.85" width="8.38" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(262.06 14.88) rotate(-0.65)" x="1.26" y="-0.54" width="5.87" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(276.87 14.73) rotate(-1.98)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(276.87 14.73) rotate(-1.98)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(276.87 14.73) rotate(-1.98)" cx="9.86" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(276.87 14.73) rotate(-1.98)" cx="9.86" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(276.87 14.73) rotate(-1.98)" x="0" y="0.15" width="8.46" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(276.87 14.73) rotate(-1.98)" x="0" y="-0.85" width="8.46" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(276.87 14.73) rotate(-1.98)" x="0" y="-0.85" width="8.46" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(276.87 14.73) rotate(-1.98)" x="1.27" y="-0.54" width="5.92" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(290.67 15.47) rotate(-1.13)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(290.67 15.47) rotate(-1.13)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(290.67 15.47) rotate(-1.13)" cx="9.96" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(290.67 15.47) rotate(-1.13)" cx="9.96" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(290.67 15.47) rotate(-1.13)" x="0" y="0.15" width="8.56" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(290.67 15.47) rotate(-1.13)" x="0" y="-0.85" width="8.56" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(290.67 15.47) rotate(-1.13)" x="0" y="-0.85" width="8.56" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(290.67 15.47) rotate(-1.13)" x="1.28" y="-0.54" width="5.99" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(305.38 15.46) rotate(3.98)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(305.38 15.46) rotate(3.98)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(305.38 15.46) rotate(3.98)" cx="9.75" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(305.38 15.46) rotate(3.98)" cx="9.75" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(305.38 15.46) rotate(3.98)" x="0" y="0.15" width="8.35" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(305.38 15.46) rotate(3.98)" x="0" y="-0.85" width="8.35" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(305.38 15.46) rotate(3.98)" x="0" y="-0.85" width="8.35" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(305.38 15.46) rotate(3.98)" x="1.25" y="-0.54" width="5.84" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(319.54 15.10) rotate(-2.34)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(319.54 15.10) rotate(-2.34)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(319.54 15.10) rotate(-2.34)" cx="9.65" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(319.54 15.10) rotate(-2.34)" cx="9.65" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(319.54 15.10) rotate(-2.34)" x="0" y="0.15" width="8.25" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(319.54 15.10) rotate(-2.34)" x="0" y="-0.85" width="8.25" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(319.54 15.10) rotate(-2.34)" x="0" y="-0.85" width="8.25" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(319.54 15.10) rotate(-2.34)" x="1.24" y="-0.54" width="5.77" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(334.33 15.48) rotate(-0.04)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(334.33 15.48) rotate(-0.04)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(334.33 15.48) rotate(-0.04)" cx="9.67" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(334.33 15.48) rotate(-0.04)" cx="9.67" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(334.33 15.48) rotate(-0.04)" x="0" y="0.15" width="8.27" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(334.33 15.48) rotate(-0.04)" x="0" y="-0.85" width="8.27" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(334.33 15.48) rotate(-0.04)" x="0" y="-0.85" width="8.27" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(334.33 15.48) rotate(-0.04)" x="1.24" y="-0.54" width="5.79" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(349.04 14.92) rotate(-2.06)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(349.04 14.92) rotate(-2.06)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(349.04 14.92) rotate(-2.06)" cx="8.46" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(349.04 14.92) rotate(-2.06)" cx="8.46" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(349.04 14.92) rotate(-2.06)" x="0" y="0.15" width="7.06" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(349.04 14.92) rotate(-2.06)" x="0" y="-0.85" width="7.06" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(349.04 14.92) rotate(-2.06)" x="0" y="-0.85" width="7.06" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(349.04 14.92) rotate(-2.06)" x="1.06" y="-0.54" width="4.94" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(361.41 15.48) rotate(-0.08)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(361.41 15.48) rotate(-0.08)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(361.41 15.48) rotate(-0.08)" cx="9.28" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(361.41 15.48) rotate(-0.08)" cx="9.28" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(361.41 15.48) rotate(-0.08)" x="0" y="0.15" width="7.88" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(361.41 15.48) rotate(-0.08)" x="0" y="-0.85" width="7.88" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(361.41 15.48) rotate(-0.08)" x="0" y="-0.85" width="7.88" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(361.41 15.48) rotate(-0.08)" x="1.18" y="-0.54" width="5.51" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(375.58 14.79) rotate(-0.25)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(375.58 14.79) rotate(-0.25)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(375.58 14.79) rotate(-0.25)" cx="8.83" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(375.58 14.79) rotate(-0.25)" cx="8.83" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(375.58 14.79) rotate(-0.25)" x="0" y="0.15" width="7.43" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(375.58 14.79) rotate(-0.25)" x="0" y="-0.85" width="7.43" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(375.58 14.79) rotate(-0.25)" x="0" y="-0.85" width="7.43" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(375.58 14.79) rotate(-0.25)" x="1.12" y="-0.54" width="5.20" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(389.38 14.62) rotate(1.18)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(389.38 14.62) rotate(1.18)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(389.38 14.62) rotate(1.18)" cx="9.66" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(389.38 14.62) rotate(1.18)" cx="9.66" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(389.38 14.62) rotate(1.18)" x="0" y="0.15" width="8.26" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(389.38 14.62) rotate(1.18)" x="0" y="-0.85" width="8.26" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(389.38 14.62) rotate(1.18)" x="0" y="-0.85" width="8.26" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(389.38 14.62) rotate(1.18)" x="1.24" y="-0.54" width="5.78" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(402.72 14.94) rotate(-2.09)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(402.72 14.94) rotate(-2.09)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(402.72 14.94) rotate(-2.09)" cx="9.34" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(402.72 14.94) rotate(-2.09)" cx="9.34" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(402.72 14.94) rotate(-2.09)" x="0" y="0.15" width="7.94" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(402.72 14.94) rotate(-2.09)" x="0" y="-0.85" width="7.94" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(402.72 14.94) rotate(-2.09)" x="0" y="-0.85" width="7.94" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(402.72 14.94) rotate(-2.09)" x="1.19" y="-0.54" width="5.56" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(416.11 15.28) rotate(3.68)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(416.11 15.28) rotate(3.68)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(416.11 15.28) rotate(3.68)" cx="8.52" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(416.11 15.28) rotate(3.68)" cx="8.52" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(416.11 15.28) rotate(3.68)" x="0" y="0.15" width="7.12" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(416.11 15.28) rotate(3.68)" x="0" y="-0.85" width="7.12" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(416.11 15.28) rotate(3.68)" x="0" y="-0.85" width="7.12" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(416.11 15.28) rotate(3.68)" x="1.07" y="-0.54" width="4.98" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(428.48 14.51) rotate(0.34)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(428.48 14.51) rotate(0.34)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(428.48 14.51) rotate(0.34)" cx="9.03" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(428.48 14.51) rotate(0.34)" cx="9.03" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(428.48 14.51) rotate(0.34)" x="0" y="0.15" width="7.63" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(428.48 14.51) rotate(0.34)" x="0" y="-0.85" width="7.63" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(428.48 14.51) rotate(0.34)" x="0" y="-0.85" width="7.63" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(428.48 14.51) rotate(0.34)" x="1.14" y="-0.54" width="5.34" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(441.47 14.77) rotate(4.72)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(441.47 14.77) rotate(4.72)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(441.47 14.77) rotate(4.72)" cx="8.81" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(441.47 14.77) rotate(4.72)" cx="8.81" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(441.47 14.77) rotate(4.72)" x="0" y="0.15" width="7.41" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(441.47 14.77) rotate(4.72)" x="0" y="-0.85" width="7.41" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(441.47 14.77) rotate(4.72)" x="0" y="-0.85" width="7.41" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(441.47 14.77) rotate(4.72)" x="1.11" y="-0.54" width="5.19" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(453.92 15.28) rotate(-2.57)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(453.92 15.28) rotate(-2.57)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(453.92 15.28) rotate(-2.57)" cx="9.33" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(453.92 15.28) rotate(-2.57)" cx="9.33" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(453.92 15.28) rotate(-2.57)" x="0" y="0.15" width="7.93" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(453.92 15.28) rotate(-2.57)" x="0" y="-0.85" width="7.93" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(453.92 15.28) rotate(-2.57)" x="0" y="-0.85" width="7.93" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(453.92 15.28) rotate(-2.57)" x="1.19" y="-0.54" width="5.55" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/>
+<ellipse transform="translate(467.60 14.77) rotate(-3.37)" cx="-1.40" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(467.60 14.77) rotate(-3.37)" cx="-1.40" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<ellipse transform="translate(467.60 14.77) rotate(-3.37)" cx="9.63" cy="0" rx="0.85" ry="0.71" fill="#2c1f12" fill-opacity="0.32" filter="url(#b)"/>
+<ellipse transform="translate(467.60 14.77) rotate(-3.37)" cx="9.63" cy="0" rx="0.42" ry="0.37" fill="#2c1f12" fill-opacity="0.42"/>
+<rect transform="translate(467.60 14.77) rotate(-3.37)" x="0" y="0.15" width="8.23" height="1.7" rx="0.85" fill="#2c1f12" fill-opacity="0.3" filter="url(#b)"/>
+<rect transform="translate(467.60 14.77) rotate(-3.37)" x="0" y="-0.85" width="8.23" height="1.7" rx="0.85" fill="url(#t2)"/>
+<rect transform="translate(467.60 14.77) rotate(-3.37)" x="0" y="-0.85" width="8.23" height="1.7" rx="0.85" fill="url(#twt2)"/>
+<rect transform="translate(467.60 14.77) rotate(-3.37)" x="1.23" y="-0.54" width="5.76" height="0.29" rx="0.14" fill="#fff3e6" fill-opacity="0.45"/></svg>

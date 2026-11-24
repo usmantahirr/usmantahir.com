@@ -30,7 +30,7 @@ export function Footer() {
           </Link>
           <nav className="footlinks" aria-label="Footer">
             <Link href="/#work">Work</Link>
-            <Link href="/writing">Blog</Link>
+            <Link href="/writing">Writing</Link>
             <Link href="/#skills">Capabilities</Link>
             <Link href="/#contact">Contact</Link>
             <a href={FEED_PATH}>RSS</a>

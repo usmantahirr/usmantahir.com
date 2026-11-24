@@ -58,7 +58,7 @@ export function ContactForm() {
           />
         </div>
         <div className="field">
-          <label htmlFor="cf-msg">Message</label>
+          <label htmlFor="cf-msg">What&rsquo;s the problem?</label>
           <textarea
             id="cf-msg"
             name="message"
